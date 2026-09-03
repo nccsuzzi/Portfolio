@@ -1,0 +1,90 @@
+# Muhammad Usman
+AI/ML Engineer | Computer Vision, LLMs & RAG Systems | Scalable Backend Engineering
+Islamabad 44000, ICT, Pakistan | +92 335 9508369 | mu232427@gmail.com
+LinkedIn: linkedin.com/in/muhammad-usman-2aaa69241 | GitHub: github.com/nccsuzzi
+
+================================================================================
+SUMMARY
+================================================================================
+AI/ML Engineer with 1.5+ years of production experience shipping LLM systems, RAG pipelines, and computer vision applications across defence, enterprise, and SaaS domains. Proven track record of reducing operational overhead, cutting latency, and delivering measurable business impact through intelligent automation. Published in Springer and author of an open-source Python package on PyPI (ctxintel). Equally comfortable at the research frontier and in production backend engineering.
+
+================================================================================
+EDUCATION
+================================================================================
+Bachelor’s Degree in Computer Sciences                               09/2021 – 07/2025
+Air University, Islamabad, Pakistan                                    GPA: 3.10 / 4.00
+
+================================================================================
+SKILLS
+================================================================================
+AI/ML & AI Systems:
+  NLP, PyTorch, TensorFlow, Scikit-learn, OpenCV, LangChain, LangGraph, Retrieval-Augmented Generation (RAG), Prompt Engineering, LLM Fine-Tuning, Semantic Search, AI Agents, Pinecone, FAISS, ChromaDB, OpenSearch, Vector Search, Multi-Agent Systems, Data Pipelines, LiteLLM, Langfuse, Mediapipe
+
+Backend & MLOps/Cloud:
+  FastAPI, Flask, Django, REST APIs, AWS S3, AWS EC2, AWS Lambda, AWS Bedrock, GCP Cloud Run, Docker, Terraform, MLflow, Jenkins, Redis, Prometheus, Grafana, Sentry
+
+Soft Skills:
+  Technical Writing & Documentation, Stakeholder Communication, Analytical Problem-Solving, Cross-Functional Team Collaboration, Research & Experimentation, Agile Workflows
+
+================================================================================
+EXPERIENCE
+================================================================================
+AI Engineer                                                         09/2025 – Present
+Phebsoft, Islamabad, Pakistan (Client Partnership: Gitwork)
+• Architected multi-agent systems capable of autonomously performing tasks such as data scraping, information retrieval, and workflow automation.
+• Developed RAG pipelines with vector embeddings to enable contextual Q&A across large product documentation datasets.
+• Designed scalable AI APIs using FastAPI, delivering real-time inference.
+• Deployed Docker-based AI microservices on GCP VM Compute Engine, streamlining integration between ML models and production backend systems.
+
+AI Engineer                                                         02/2025 – 09/2025
+NASTP, Rawalpindi, Pakistan
+• Processed and curated 100k+ digital forensic records for AI model training, fine-tuning, and evaluation.
+• Fine-tuned transformer-based language models for document classification and semantic retrieval using AWS SageMaker, improving categorisation accuracy by 18%.
+• Delivered 5+ RESTful AI APIs covering OCR, speech, and voice processing using Python and FastAPI.
+• Optimised model serving pipelines achieving <400 ms inference latency across all production endpoints.
+
+================================================================================
+PROJECTS
+================================================================================
+Afterdesk AI [Production System: https://afterdesk.ai]
+Stack: OpenCV, Python, FastAPI, PyMuPDF
+• Built an AI-powered document automation pipeline using OpenCV and computer vision to analyze arbitrary PDF templates, detect layout elements and form fields, and automatically map structured data to the appropriate regions.
+• Developed a FastAPI-based processing service combining document extraction, template mapping, and dynamic PDF generation.
+
+Syscore AI [Internal Enterprise Deployment · NDA]
+Stack: AWS Bedrock, AWS S3, FastAPI, Python, SYSPRO ERP
+• Developed an AI-powered middleware for SYSPRO ERP using AWS Bedrock for foundation model orchestration and AWS S3 for XML record storage, enabling natural language and multimodal inputs.
+• Achieved 10x faster data retrieval and ~99% reduction in ERP request formatting errors by streamlining input parsing and validation.
+
+Speakify AI [Production System: https://www.wearespeakify.com]
+Stack: FastAPI, PostgreSQL, Cohere, Pinecone, LiteLLM, Langfuse, Stripe, DocuSign
+• Engineered an asynchronous FastAPI + PostgreSQL backend across 15+ API domains for a B2B SaaS marketplace handling the end-to-end speaker booking lifecycle.
+• Implemented a RAG matching engine using Cohere embeddings and Pinecone with Langfuse observability; integrated Stripe and DocuSign for commission splits and contracting.
+• Transformed manual workflows into a zero-touch revenue pipeline managing 360+ user profiles and live bookings.
+
+Kernel-Global [Production System: https://www.kernel-global.com]
+Stack: Python, FastAPI, Azure OpenAI, MySQL, PyMuPDF, python-docx, Docker, Pytest, Locust
+• Architected an asynchronous GenAI microservice using FastAPI, AsyncIO, and Azure OpenAI to automate candidate assessment, recruitment workflows, and candidate support.
+• Built structured document-processing pipelines using PyMuPDF and python-docx and a conversational AI agent with MySQL context retrieval, reducing token usage and API latency by ~35% through dynamic conversation summarization.
+• Implemented LLM security guardrails for prompt-injection and jailbreak detection, backed by 40+ unit, integration, and security tests and Locust-based concurrency testing.
+
+AutoML Platform [Internal Enterprise Deployment]
+Stack: Python, MLflow, Docker, FastAPI, Scikit-learn, Prometheus, Grafana
+• Delivered a self-service MLOps platform automating the model lifecycle across training, evaluation, deployment, and monitoring for multiple ML frameworks.
+• Reduced average model deployment time by ~60% and monitoring setup overhead by ~70% through automated pipelines and Prometheus/Grafana observability.
+
+View-Invariant Person Re-Identification [Research]
+Stack: PyTorch, OpenCV, GANs, Attention Mechanisms, Python
+• Designed a Pose-Aware AE-GAN with an attention-driven feature fusion module to synthesise view-invariant features across non-overlapping camera networks.
+• Achieved a top-1 accuracy gain of 5%+ over baseline models; validated via publication in The Visual Computer (Springer).
+
+================================================================================
+KEY ACHIEVEMENTS
+================================================================================
+Publication:
+• "View-Invariant Person Re-Identification in Camera Networks by Pose-Aware AE-GAN and Attention-Driven Feature Fusion"
+  Published in The Visual Computer (Springer), DOI: 10.1007/s00371-025-04300-1
+
+Open Source:
+• Conceived and released ctxintel, an open-source Python package for LLM context optimisation. Implements a 6-stage deterministic pipeline (ranking, extraction, memory, compression, optimisation) using TF-IDF, spaCy NER, and extractive summarisation zero external API calls.
+  PyPI: https://pypi.org/project/ctxintel

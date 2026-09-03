@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Usman — AI/ML Engineer · LLMs, RAG & Computer Vision Systems</title>
+
+  <meta name="description"
+    content="AI/ML Engineer with 1.5+ years of production experience shipping LLM systems, RAG pipelines, and computer vision applications across defence, enterprise, and SaaS. Published in Springer; author of ctxintel on PyPI.">
+  <meta name="author" content="Muhammad Usman">
+  <meta name="keywords"
+    content="Muhammad Usman, AI Engineer, ML Engineer, RAG, LangGraph, FastAPI, PyTorch, Computer Vision, PyPI ctxintel, Springer Visual Computer, Islamabad, AI Pakistan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Muhammad Usman — AI/ML Engineer · LLMs, RAG & CV">
+  <meta property="og:description"
+    content="Production AI systems, LangGraph multi-agent orchestration, RAG pipelines, and computer vision. Published in Springer.">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Social Profiles -->
+  <link rel="me" href="https://github.com/nccsuzzi">
+  <link rel="me" href="https://linkedin.com/in/muhammad-usman-2aaa69241">
+  <link rel="me" href="mailto:mu232427@gmail.com">
+
+  <!-- Styles & Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Usman",
+    "jobTitle": "AI/ML Engineer",
+    "description": "AI/ML Engineer specializing in Computer Vision, LLMs, RAG systems, and scalable backend engineering.",
+    "email": "mailto:mu232427@gmail.com",
+    "telephone": "+923359508369",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressRegion": "ICT",
+      "addressCountry": "PK"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Air University, Islamabad"
+    },
+    "sameAs": [
+      "https://github.com/nccsuzzi",
+      "https://linkedin.com/in/muhammad-usman-2aaa69241"
+    ],
+    "knowsAbout": [
+      "Large Language Models",
+      "LangGraph Multi-Agent Systems",
+      "Retrieval-Augmented Generation (RAG)",
+      "Computer Vision & OpenCV",
+      "FastAPI & Asynchronous Python",
+      "AWS SageMaker & Bedrock",
+      "ctxintel Context Optimization"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Ambient Atmosphere & Blueprint Grid -->
+  <div class="fixed-bg" aria-hidden="true">
+    <div class="bp-grid"></div>
+    <div class="glow-top-right"></div>
+    <div class="glow-bottom-left"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="shell">
+      <div class="nav-bar">
+        <div class="nav-left">
+          <a href="#field" class="nav-brand">M.USMAN</a>
+          <a href="#about" class="nav-link hidden-sm">// FIELD REPORT</a>
+          <a href="#architecture" class="nav-link hidden-sm">// ARCHITECTURE</a>
+          <a href="#manifest" class="nav-link hidden-sm">// SYSTEMS</a>
+          <a href="#research" class="nav-link hidden-sm">// RESEARCH & PYPI</a>
+          <a href="#contact" class="nav-link" style="color:var(--signal);">// COMMS</a>
+        </div>
+
+        <nav class="nav-sections" aria-label="Section shortcuts">
+          <a href="#field" class="section-pill active">§01</a>
+          <a href="#architecture" class="section-pill">§02</a>
+          <a href="#velocity" class="section-pill">§03</a>
+          <a href="#timeline" class="section-pill">§04</a>
+          <a href="#manifest" class="section-pill">§05</a>
+          <a href="#research" class="section-pill">§05.5</a>
+          <a href="#capability" class="section-pill">§06</a>
+          <a href="#faq" class="section-pill">§07</a>
+          <a href="#contact" class="section-pill">§08</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="assets/MuhammadUsmanProfessionalCV.pdf" target="_blank" download="Muhammad_Usman_CV.pdf"
+            class="nav-link hidden-sm" style="color:var(--fg);"><span style="color:var(--signal);">↓</span> RESUME</a>
+          <a href="mailto:mu232427@gmail.com" class="nav-link hidden-sm" style="color:var(--fg-2);">EMAIL</a>
+          <span class="live-beacon">
+            <span class="live-dot"></span> LIVE
+          </span>
+          <span id="live-clock" class="font-mono text-[11px]" style="color:var(--fg-3); font-variant-numeric: tabular-nums;">--:--:--
+            PKT</span>
+          <button type="button" id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme">◑
+            LIGHT</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Floating Section Navigator -->
+  <nav class="mobile-nav-bar" aria-label="Mobile Navigation">
+    <a href="#field" class="mobile-nav-link active">§01</a>
+    <a href="#architecture" class="mobile-nav-link">§02</a>
+    <a href="#velocity" class="mobile-nav-link">§03</a>
+    <a href="#timeline" class="mobile-nav-link">§04</a>
+    <a href="#manifest" class="mobile-nav-link">§05</a>
+    <a href="#research" class="mobile-nav-link">§05.5</a>
+    <a href="#capability" class="mobile-nav-link">§06</a>
+    <a href="#faq" class="mobile-nav-link">§07</a>
+    <a href="#contact" class="mobile-nav-link">§08</a>
+  </nav>
+
+  <main>
+    <!-- ================= Section 01: Hero / Field Report ================= -->
+    <section id="field">
+      <div class="shell">
+        <div class="hero-meta-grid">
+          <div style="grid-column: span 12 / span 12;">
+            <div class="caption">// Document — Engineering Field Report</div>
+            <div class="caption-signal" style="margin-top: 4px;">FILED 2026.09 / ISLAMABAD, ICT, PK</div>
+          </div>
+        </div>
+
+        <div class="hero-meta-grid" style="margin-bottom: 2rem;">
+          <div style="grid-column: span 12 / span 4;">
+            <div class="caption">// Subject</div>
+            <div class="font-mono text-[12px]" style="color:var(--fg-2); margin-top: 4px;">
+              M. USMAN — AI/ML Systems Engineer<br>
+              Computer Vision · LLMs · RAG
+            </div>
+          </div>
+          <div style="grid-column: span 12 / span 4;">
+            <div class="caption">// Current Operational Post</div>
+            <div class="font-mono text-[12px]" style="color:var(--fg-2); margin-top: 4px;">
+              AI Engineer @ Phebsoft<br>
+              Client Partnership: Gitwork
+            </div>
+          </div>
+          <div style="grid-column: span 12 / span 4;">
+            <div class="caption">// Status</div>
+            <div class="live-beacon font-mono text-[12px]" style="margin-top: 4px;">
+              <span class="live-dot"></span> SHIPPING · ISLAMABAD, PK
+            </div>
+          </div>
+        </div>
+
+        <!-- Giant Editorial Headline -->
+        <h1 class="hero-name-title">
+          <span style="display:block;">Muhammad</span>
+          <span style="display:block;">
+            <span class="font-display-italic" style="color:var(--fg-2);">Usman</span><span class="font-display-italic"
+              style="color:var(--signal);">.</span>
+          </span>
+        </h1>
+
+        <!-- Hero Subheadline -->
+        <div class="hero-subhead-grid">
+          <div style="grid-column: span 12 / span 7;">
+            <p class="hero-lead-text">
+              I'm an AI/ML Engineer. I build the neural loops and backend systems behind production intelligent software
+              —
+              <span style="color:var(--signal);">multi-agent systems, RAG pipelines, and vision models,</span>
+              deterministic & fast.
+            </p>
+          </div>
+          <div style="grid-column: span 12 / span 5; border-left: 1px solid var(--rule); padding-left: 1.5rem;">
+            <p class="font-mono text-[13px] leading-relaxed" style="color:var(--fg-3);">
+              Air University · BS Computer Science (2021–2025)<br>
+              1.5+ Years Production AI Across Defence, Enterprise & SaaS<br>
+              Author of <span style="color:var(--signal);">ctxintel</span> on PyPI · Published in Springer<br>
+              <span style="color:var(--fg-2);">Specialty: Latency &lt;400ms & Zero-Touch ML Microservices</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hairline" style="margin-top: 2.5rem; margin-bottom: 2rem;"></div>
+
+        <!-- Action Bar & Measured Stats -->
+        <div class="hero-stats-panel">
+          <div style="grid-column: span 12 / span 7;">
+            <div class="caption" style="margin-bottom: 0.5rem;">// PROVEN PRODUCTION IMPACT</div>
+            <p class="font-display-italic text-[var(--fg-2)]"
+              style="font-size: clamp(1.15rem, 1.4vw, 1.35rem); line-height: 1.5;">
+              Processed <span style="color:var(--fg);">100k+ forensic records</span> at NASTP, cut ERP retrieval time by
+              <span style="color:var(--signal);">10× with 99% error reduction</span>, delivered sub-<span
+                style="color:var(--fg);">400ms inference latency</span>, and published novel generative Re-ID research
+              in Springer's <em>The Visual Computer</em>.
+            </p>
+          </div>
+          <div style="grid-column: span 12 / span 5; border-left: 1px solid var(--rule); padding-left: 1.5rem;">
+            <div class="caption" style="margin-bottom: 0.75rem;">// ACTIONS</div>
+            <div style="display:flex; flex-wrap:wrap; gap:0.6rem;">
+              <a href="assets/MuhammadUsmanProfessionalCV.pdf" target="_blank" download="MuhammadUsmanProfessionalCV.pdf"
+                class="btn btn-primary">
+                ↓ RESUME
+              </a>
+              <a href="https://github.com/nccsuzzi" target="_blank" rel="noopener noreferrer" class="btn">
+                GITHUB ↗
+              </a>
+              <a href="https://linkedin.com/in/muhammad-usman-2aaa69241" target="_blank" rel="noopener noreferrer"
+                class="btn">
+                LINKEDIN ↗
+              </a>
+              <a href="#manifest" class="btn">
+                ▸ CASE STUDIES
+              </a>
+              <a href="#contact" class="btn" style="color:var(--signal);">
+                OPEN COMMS →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="display:flex; justify-content:space-between; margin-top: 4rem; font-family:var(--font-mono); font-size:10px; letter-spacing:0.18em; color:var(--fg-3); text-transform:uppercase;">
+          <span>SCROLL FOR ARCHITECTURE & BENCHMARKS ↓</span>
+          <span>§ 01 / 08</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 01.5: About / Philosophy ================= -->
+    <section id="about" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§01.5</span>
+          <span class="caption-signal">// transmission</span>
+          <span class="caption">OPERATIONAL PROFILE</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;">
+          <div style="grid-column: span 12 / span 7;">
+            <p class="font-display"
+              style="font-size: clamp(1.6rem, 2.7vw, 2.5rem); line-height: 1.18; letter-spacing: -0.02em;">
+              I operate at the intersection of <span style="color:var(--signal);">mathematical ML research</span> and
+              <span style="color:var(--signal);">high-throughput systems engineering.</span>
+            </p>
+
+            <h3 class="caption-signal" style="margin-top: 2rem; margin-bottom: 0.5rem;">// HOW I WORK</h3>
+            <p style="color:var(--fg-2); font-size: 1.15rem; line-height: 1.65;">
+              My approach starts from first principles: identify latency and error bottlenecks, architect clear
+              interfaces, deploy modular microservices with Docker and FastAPI, and build strict observability harnesses
+              around model outputs. Whether constructing Pose-Aware GANs for surveillance camera networks or
+              orchestrating LangGraph multi-agent systems for autonomous web scraping, I prioritize deterministic
+              reliability and measurable speedups.
+            </p>
+
+            <h3 class="caption-signal" style="margin-top: 2rem; margin-bottom: 0.5rem;">// RESEARCH DUALITY</h3>
+            <p style="color:var(--fg-2); font-size: 1.15rem; line-height: 1.65;">
+              Unlike developers who only wrap third-party API endpoints, I formulate and train custom deep learning
+              architectures. My research on view-invariant person re-identification using Pose-Aware AE-GAN and
+              attention-driven feature fusion was peer-reviewed and published in Springer's <em>The Visual
+                Computer</em>. To eliminate external latency in LLM workflows, I engineered <code>ctxintel</code>, an
+              open-source zero-API-call context optimizer published on PyPI.
+            </p>
+          </div>
+
+          <!-- Quick Take Technical Spec Card -->
+          <div style="grid-column: span 12 / span 5;">
+            <div class="card-frame ticked">
+              <span class="tick-tl"></span>
+              <span class="tick-tr"></span>
+              <span class="tick-bl"></span>
+              <span class="tick-br"></span>
+
+              <div class="caption-signal" style="margin-bottom: 1.25rem;">// SPECIFICATION SUMMARY</div>
+              <dl
+                style="display:flex; flex-direction:column; gap:0.85rem; font-family:var(--font-mono); font-size:12.5px;">
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    FOCUS</dt>
+                  <dd style="color:var(--fg);">Computer Vision · LLMs · RAG · Agents</dd>
+                </div>
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    LOCATION</dt>
+                  <dd style="color:var(--fg);">Islamabad, ICT, Pakistan</dd>
+                </div>
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    DEGREE</dt>
+                  <dd style="color:var(--fg);">BS Computer Science · Air University</dd>
+                </div>
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    CURRENT</dt>
+                  <dd style="color:var(--fg);">AI Engineer @ Phebsoft (Gitwork)</dd>
+                </div>
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    PRIOR</dt>
+                  <dd style="color:var(--fg);">AI Engineer @ NASTP (Defence AI)</dd>
+                </div>
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    RESEARCH</dt>
+                  <dd style="color:var(--signal);">The Visual Computer (Springer)</dd>
+                </div>
+                <div style="display:grid; grid-template-columns: 6rem 1fr;">
+                  <dt style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">
+                    PACKAGE</dt>
+                  <dd style="color:var(--fg);"><a href="https://pypi.org/project/ctxintel" target="_blank"
+                      rel="noopener noreferrer" style="color:var(--signal); text-decoration:underline;">ctxintel on
+                      PyPI</a></dd>
+                </div>
+              </dl>
+
+              <div class="hairline" style="margin-top: 1.5rem; margin-bottom: 1.25rem;"></div>
+
+              <div class="caption" style="margin-bottom: 0.5rem;">// CORE PRINCIPLES</div>
+              <p style="font-size: 13px; line-height: 1.6; color: var(--fg-2);">
+                Sub-second latency budgets, strict guardrails against prompt injection, deterministic context binning,
+                and end-to-end containerized microservices ready for enterprise deployment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 02: Architecture Blueprint ================= -->
+    <section id="architecture" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§02</span>
+          <span class="caption-signal">// architecture — how i architect production ai systems</span>
+          <span class="caption">LAYERED MULTI-AGENT & RAG PATTERN</span>
+        </div>
+
+        <div class="arch-container">
+          <div style="grid-column: span 12 / span 4;">
+            <h2 class="font-display"
+              style="font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.04; letter-spacing: -0.025em;">
+              How I architect<br>
+              <span class="font-display-italic" style="color:var(--signal);">AI agent systems.</span>
+            </h2>
+
+            <p style="color:var(--fg-2); margin-top: 1.25rem; line-height: 1.6;">
+              Production AI requires more than a bare API call. My reference architecture decouples incoming streaming
+              clients from backend agent pods, preprocesses prompts locally using my deterministic <span
+                style="color:var(--signal);">ctxintel</span> pipeline to compress tokens, and dispatches to vector
+              retrieval and multi-vendor LLMs with end-to-end tracing.
+            </p>
+
+            <ul
+              style="margin-top: 1.5rem; display:flex; flex-direction:column; gap:0.6rem; font-family:var(--font-mono); font-size:12.5px; color:var(--fg-2); list-style:none;">
+              <li><span style="color:var(--signal);">→</span> Asynchronous FastAPI Gateway with WSS/SSE</li>
+              <li><span style="color:var(--signal);">→</span> Autonomous LangGraph agent loops with tool fallback</li>
+              <li><span style="color:var(--signal);">→</span> Local token compression via <code>ctxintel</code> (0ms API
+                tax)</li>
+              <li><span style="color:var(--signal);">→</span> Hybrid vector retrieval (Pinecone / FAISS / pgvector)</li>
+              <li><span style="color:var(--signal);">→</span> Full audit observability via Langfuse & Prometheus</li>
+            </ul>
+
+            <div class="caption" style="margin-top: 2rem;">// HOVER OR CLICK A NODE BELOW TO INSPECT</div>
+            <div id="arch-inspector" class="arch-inspector-box">
+              <span style="color:var(--fg-3)">// Telemetry standby · hover or click any node to inspect subsystem
+                parameters →</span>
+            </div>
+          </div>
+
+          <!-- Interactive SVG Diagram -->
+          <div style="grid-column: span 12 / span 8;">
+            <div class="caption" style="display:flex; justify-content:space-between; margin-bottom: 0.75rem;">
+              <span>// FIG. 02 · PRODUCTION AI & MULTI-AGENT PIPELINE</span>
+              <span>SCALE 1:N</span>
+            </div>
+
+            <div class="arch-svg-wrapper">
+              <svg viewBox="0 0 880 580" xmlns="http://www.w3.org/2000/svg"
+                style="width:100%; height:auto; display:block;">
+                <defs>
+                  <pattern id="diag-grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="var(--grid)" stroke-width="1" />
+                  </pattern>
+                  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+                    orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--signal)" />
+                  </marker>
+                  <marker id="arrow-dim" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+                    orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--fg-3)" />
+                  </marker>
+                </defs>
+
+                <!-- Background Blueprint Grid -->
+                <rect width="880" height="580" fill="url(#diag-grid-pattern)" />
+
+                <!-- Layer Horizontal Guides -->
+                <line x1="40" y1="90" x2="840" y2="90" stroke="var(--rule)" stroke-dasharray="2 4" />
+                <line x1="40" y1="210" x2="840" y2="210" stroke="var(--rule)" stroke-dasharray="2 4" />
+                <line x1="40" y1="410" x2="840" y2="410" stroke="var(--rule)" stroke-dasharray="2 4" />
+
+                <!-- Layer Labels -->
+                <text x="50" y="35" font-family="var(--font-mono)" font-size="10" letter-spacing="0.16em"
+                  fill="var(--fg-3)">L1 · CLIENT TRANSPORT</text>
+                <text x="50" y="125" font-family="var(--font-mono)" font-size="10" letter-spacing="0.16em"
+                  fill="var(--fg-3)">L2 · API GATEWAY</text>
+                <text x="50" y="245" font-family="var(--font-mono)" font-size="10" letter-spacing="0.16em"
+                  fill="var(--fg-3)">L3 · AGENT POD & LOCAL CONTEXT OPTIMIZER</text>
+                <text x="50" y="445" font-family="var(--font-mono)" font-size="10" letter-spacing="0.16em"
+                  fill="var(--fg-3)">L4 · PERSISTENT DATA, VECTOR RAG & OBSERVABILITY</text>
+
+                <!-- Connecting Edges (Animated Stream & Request Paths) -->
+                <!-- Client to Gateway -->
+                <path d="M 280 85 L 280 135" fill="none" stroke="var(--signal)" stroke-width="1.5"
+                  marker-end="url(#arrow)" />
+                <path d="M 280 85 L 280 135" fill="none" stroke="var(--pulse)" stroke-width="1.5" class="flow-edge"
+                  opacity="0.8" />
+                <text x="290" y="112" font-family="var(--font-mono)" font-size="9" fill="var(--signal)">WSS / SSE
+                  STREAM</text>
+
+                <!-- Gateway to Agent Pod -->
+                <path d="M 280 185 L 280 265" fill="none" stroke="var(--signal)" stroke-width="1.5"
+                  marker-end="url(#arrow)" />
+                <text x="290" y="230" font-family="var(--font-mono)" font-size="9" fill="var(--signal)">ASYNC
+                  DISPATCH</text>
+
+                <!-- Agent Pod to ctxintel -->
+                <path d="M 430 315 L 530 315" fill="none" stroke="var(--signal)" stroke-width="1.5"
+                  marker-end="url(#arrow)" />
+                <text x="445" y="305" font-family="var(--font-mono)" font-size="9" fill="var(--signal)">LOCAL
+                  PIPELINE</text>
+
+                <!-- Agent Pod to Vector Store -->
+                <path d="M 220 365 L 220 455" fill="none" stroke="var(--signal)" stroke-width="1.5"
+                  marker-end="url(#arrow)" />
+                <text x="130" y="415" font-family="var(--font-mono)" font-size="9" fill="var(--signal)">DENSE
+                  RETRIEVAL</text>
+
+                <!-- Agent Pod to Persistent Store -->
+                <path d="M 340 365 L 430 455" fill="none" stroke="var(--signal)" stroke-width="1.5"
+                  marker-end="url(#arrow)" />
+
+                <!-- Observability Bridge -->
+                <path d="M 380 160 Q 690 160 690 455" fill="none" stroke="var(--fg-3)" stroke-width="1"
+                  stroke-dasharray="3 3" marker-end="url(#arrow-dim)" />
+                <text x="540" y="150" font-family="var(--font-mono)" font-size="9" fill="var(--fg-3)">TELEMETRY &
+                  SPANS</text>
+
+                <!-- Interactive Nodes -->
+                <!-- Node: Client -->
+                <g class="arch-node" data-node="client" tabindex="0">
+                  <rect x="180" y="45" width="200" height="40" fill="var(--panel)" stroke="var(--rule)" stroke-width="1"
+                    rx="2" />
+                  <text x="195" y="65" font-family="var(--font-mono)" font-size="10.5" letter-spacing="0.14em"
+                    fill="var(--fg)">CLIENT APPS / UI</text>
+                  <text x="195" y="78" font-family="var(--font-mono)" font-size="9" fill="var(--fg-3)">Web · Mobile ·
+                    Dashboards</text>
+                </g>
+
+                <!-- Node: Gateway -->
+                <g class="arch-node" data-node="gateway" tabindex="0">
+                  <rect x="180" y="135" width="200" height="50" fill="var(--panel)" stroke="var(--signal)"
+                    stroke-width="1.5" rx="2" />
+                  <text x="195" y="157" font-family="var(--font-mono)" font-size="11" letter-spacing="0.14em"
+                    fill="var(--signal)">FASTAPI GATEWAY</text>
+                  <text x="195" y="174" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">Auth · Sessions
+                    · Rate-Limit</text>
+                </g>
+
+                <!-- Node: Agent Pod -->
+                <g class="arch-node" data-node="agent" tabindex="0">
+                  <rect x="130" y="265" width="300" height="100" fill="var(--panel)" stroke="var(--signal)"
+                    stroke-width="1.5" rx="2" />
+                  <text x="145" y="290" font-family="var(--font-mono)" font-size="11" letter-spacing="0.14em"
+                    fill="var(--signal)">MULTI-AGENT POD</text>
+                  <text x="145" y="312" font-family="var(--font-mono)" font-size="9.5" fill="var(--fg)">LangGraph
+                    Orchestration + LiteLLM</text>
+                  <text x="145" y="330" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">• Dynamic Tool
+                    Search & Execution</text>
+                  <text x="145" y="346" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">• Multi-Model
+                    Routing (Bedrock / Azure OpenAI)</text>
+                </g>
+
+                <!-- Node: ctxintel -->
+                <g class="arch-node" data-node="ctxintel" tabindex="0">
+                  <rect x="530" y="265" width="270" height="100" fill="rgba(255, 74, 28, 0.05)" stroke="var(--signal)"
+                    stroke-width="1.5" rx="2" />
+                  <text x="545" y="290" font-family="var(--font-mono)" font-size="11" letter-spacing="0.14em"
+                    fill="var(--signal)">CTXINTEL ENGINE (PyPI)</text>
+                  <text x="545" y="312" font-family="var(--font-mono)" font-size="9.5" fill="var(--fg)">Deterministic
+                    Context Optimizer</text>
+                  <text x="545" y="330" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">• 6-Stage NER,
+                    TF-IDF & Compression</text>
+                  <text x="545" y="346" font-family="var(--font-mono)" font-size="9" fill="var(--pulse)">• Zero external
+                    API latency (100% Local)</text>
+                </g>
+
+                <!-- Node: Vector Store -->
+                <g class="arch-node" data-node="vector" tabindex="0">
+                  <rect x="130" y="455" width="190" height="65" fill="var(--panel)" stroke="var(--rule)"
+                    stroke-width="1" rx="2" />
+                  <text x="145" y="478" font-family="var(--font-mono)" font-size="10.5" letter-spacing="0.14em"
+                    fill="var(--fg)">VECTOR / RAG STORE</text>
+                  <text x="145" y="496" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">Pinecone · FAISS
+                    · pgvector</text>
+                  <text x="145" y="510" font-family="var(--font-mono)" font-size="9" fill="var(--fg-3)">Cosine Distance
+                    & Filters</text>
+                </g>
+
+                <!-- Node: Storage -->
+                <g class="arch-node" data-node="store" tabindex="0">
+                  <rect x="340" y="455" width="220" height="65" fill="var(--panel)" stroke="var(--rule)"
+                    stroke-width="1" rx="2" />
+                  <text x="355" y="478" font-family="var(--font-mono)" font-size="10.5" letter-spacing="0.14em"
+                    fill="var(--fg)">STATE & DATA LEDGER</text>
+                  <text x="355" y="496" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">PostgreSQL
+                    (asyncpg) + Redis</text>
+                  <text x="355" y="510" font-family="var(--font-mono)" font-size="9" fill="var(--fg-3)">AWS S3 XML
+                    Ledger & Locks</text>
+                </g>
+
+                <!-- Node: Observability -->
+                <g class="arch-node" data-node="observability" tabindex="0">
+                  <rect x="580" y="455" width="220" height="65" fill="var(--panel)" stroke="var(--rule)"
+                    stroke-width="1" rx="2" />
+                  <text x="595" y="478" font-family="var(--font-mono)" font-size="10.5" letter-spacing="0.14em"
+                    fill="var(--fg)">OBSERVABILITY</text>
+                  <text x="595" y="496" font-family="var(--font-mono)" font-size="9" fill="var(--fg-2)">Langfuse Tracing
+                    & Costs</text>
+                  <text x="595" y="510" font-family="var(--font-mono)" font-size="9" fill="var(--fg-3)">Prometheus +
+                    Grafana</text>
+                </g>
+              </svg>
+
+              <!-- Legend footer -->
+              <div
+                style="display:flex; flex-wrap:wrap; gap:1.5rem; padding: 0.75rem 1.25rem; font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em; color:var(--fg-3); border-top:1px solid var(--rule);">
+                <span style="display:inline-flex; align-items:center; gap:0.4rem;">
+                  <span style="width:8px; height:2px; background:var(--signal);"></span> Core Path
+                </span>
+                <span style="display:inline-flex; align-items:center; gap:0.4rem;">
+                  <span style="width:8px; height:2px; background:var(--pulse);"></span> Live Stream (SSE/WSS)
+                </span>
+                <span style="display:inline-flex; align-items:center; gap:0.4rem;">
+                  <span style="width:8px; height:2px; background:var(--fg-3);"></span> Telemetry / Spans
+                </span>
+                <span style="margin-left:auto; color:var(--fg-3);">SYSTEM VER 2026.09</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 03: Velocity & Measured Metrics ================= -->
+    <section id="velocity" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§03</span>
+          <span class="caption-signal">// velocity & verified metrics</span>
+          <span class="caption">QUANTIFIED PRODUCTION BENCHMARKS</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap: 2rem; align-items: start;">
+          <div style="grid-column: span 12 / span 4;">
+            <h2 class="font-display"
+              style="font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.04; letter-spacing: -0.025em;">
+              Measured numbers,<br>
+              <span class="font-display-italic" style="color:var(--signal);">not marketing.</span>
+            </h2>
+            <p style="color:var(--fg-2); margin-top: 1.25rem; line-height: 1.6;">
+              Every role and project on my resume produced auditable performance gains. From shaving milliseconds off
+              neural inference in defence microservices to collapsing ERP query latencies by an order of magnitude.
+            </p>
+
+            <div
+              style="margin-top: 2rem; display:flex; flex-direction:column; gap:0.75rem; font-family:var(--font-mono); font-size:12px;">
+              <div style="display:grid; grid-template-columns: 6.5rem 1fr;">
+                <span
+                  style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">INFERENCE</span>
+                <span style="color:var(--fg);">&lt;400ms across all endpoints</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 6.5rem 1fr;">
+                <span style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">ERP
+                  RETRIEVAL</span>
+                <span style="color:var(--fg);">10× speedup with AWS Bedrock</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 6.5rem 1fr;">
+                <span
+                  style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">ERROR
+                  DROP</span>
+                <span style="color:var(--fg);">~99% fewer ERP request errors</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 6.5rem 1fr;">
+                <span style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">DATA
+                  SCALE</span>
+                <span style="color:var(--fg);">100k+ forensic records curated</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 6.5rem 1fr;">
+                <span
+                  style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">DEPLOY
+                  TIME</span>
+                <span style="color:var(--fg);">~60% reduction via AutoML platform</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 6.5rem 1fr;">
+                <span
+                  style="color:var(--fg-3); font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em;">ACCURACY</span>
+                <span style="color:var(--fg);">+5% top-1 gain on Re-ID benchmarks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benchmark Cards Grid -->
+          <div style="grid-column: span 12 / span 8;">
+            <div class="metric-card-grid">
+              <div class="metric-stat-box">
+                <div class="caption">// NASTP DEFENCE AI</div>
+                <div class="metric-stat-val">&lt;400<span style="font-size:1.5rem;">ms</span></div>
+                <p style="font-size:12.5px; color:var(--fg-2); margin-top:0.5rem;">
+                  Inference latency across all 5+ production RESTful AI endpoints (OCR, speech, voice).
+                </p>
+              </div>
+
+              <div class="metric-stat-box">
+                <div class="caption">// SYSCORE AI · SYSPRO ERP</div>
+                <div class="metric-stat-val">10<span style="font-size:1.8rem;">×</span></div>
+                <p style="font-size:12.5px; color:var(--fg-2); margin-top:0.5rem;">
+                  Faster data retrieval using AWS Bedrock foundation model orchestration & S3 XML ledger.
+                </p>
+              </div>
+
+              <div class="metric-stat-box">
+                <div class="caption">// ERP ERROR REDUCTION</div>
+                <div class="metric-stat-val">99<span style="font-size:1.8rem;">%</span></div>
+                <p style="font-size:12.5px; color:var(--fg-2); margin-top:0.5rem;">
+                  Reduction in ERP transactional formatting errors through strict neural schema parsing.
+                </p>
+              </div>
+
+              <div class="metric-stat-box">
+                <div class="caption">// KERNEL-GLOBAL GENAI</div>
+                <div class="metric-stat-val">-35<span style="font-size:1.8rem;">%</span></div>
+                <p style="font-size:12.5px; color:var(--fg-2); margin-top:0.5rem;">
+                  Reduction in LLM token usage and latency via dynamic context summarization.
+                </p>
+              </div>
+
+              <div class="metric-stat-box">
+                <div class="caption">// MLOPS PLATFORM</div>
+                <div class="metric-stat-val">-60<span style="font-size:1.8rem;">%</span></div>
+                <p style="font-size:12.5px; color:var(--fg-2); margin-top:0.5rem;">
+                  Reduction in model deployment time with automated Docker containerization and MLflow.
+                </p>
+              </div>
+
+              <div class="metric-stat-box">
+                <div class="caption">// THE VISUAL COMPUTER (SPRINGER)</div>
+                <div class="metric-stat-val">+5<span style="font-size:1.8rem;">%</span></div>
+                <p style="font-size:12.5px; color:var(--fg-2); margin-top:0.5rem;">
+                  Top-1 Re-Identification accuracy improvement via Pose-Aware AE-GAN & Attention Fusion.
+                </p>
+              </div>
+            </div>
+
+            <!-- Callout Note -->
+            <div
+              style="margin-top: 1.5rem; padding: 1rem 1.25rem; border-left: 2px solid var(--signal); background: var(--panel-2); font-family:var(--font-mono); font-size:12px; line-height:1.6; color:var(--fg-2);">
+              <span style="color:var(--signal); font-weight:600;">// DETERMINISTIC ENGINEERING PRINCIPLE: </span>
+              In production AI, accuracy without latency guarantees is unusable. All architectures feature concurrency
+              stress-testing (Locust, Pytest) and strict token-budget limits.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 04: Career Timeline ================= -->
+    <section id="timeline" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§04</span>
+          <span class="caption-signal">// timeline · career progression</span>
+          <span class="caption">DEFENCE · ENTERPRISE · SAAS</span>
+        </div>
+
+        <div style="max-width: 860px; margin-bottom: 3rem;">
+          <h2 class="font-display"
+            style="font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; letter-spacing: -0.03em;">
+            The track record,<br>
+            <span class="font-display-italic" style="color:var(--signal);">documented</span> from origin.
+          </h2>
+          <p style="color:var(--fg-2); font-size: 1.15rem; margin-top: 1rem; line-height: 1.6;">
+            From digital forensics and defence AI at NASTP to autonomous multi-agent production systems at Phebsoft.
+            Click <span class="font-mono" style="color:var(--signal);">▸ DEEP DIVE</span> on any role for technical
+            architecture specs.
+          </p>
+        </div>
+
+        <div style="max-width: 900px; display:flex; flex-direction:column;">
+          <!-- Timeline Item 1: Phebsoft -->
+          <article class="timeline-item active-role">
+            <span class="marker-dot"></span>
+
+            <div style="grid-column: span 12 / span 3;">
+              <div class="font-display-italic"
+                style="font-size: clamp(2rem, 4vw, 3.2rem); color:var(--signal); line-height:1;">
+                2025
+              </div>
+              <div class="caption-signal" style="margin-top: 0.5rem;">● CURRENT ROLE</div>
+              <div class="caption" style="margin-top: 0.25rem;">09/2025 – Present</div>
+              <div class="caption" style="margin-top: 0.25rem;">Islamabad, Pakistan</div>
+            </div>
+
+            <div style="grid-column: span 12 / span 9;">
+              <h3 class="font-display"
+                style="font-size: clamp(1.4rem, 2.5vw, 1.9rem); line-height: 1.1; letter-spacing: -0.02em;">
+                AI Engineer<br>
+                <span class="font-display-italic" style="color:var(--fg-2);">Phebsoft · Client Partnership:
+                  Gitwork</span>
+              </h3>
+
+              <ul style="margin-top: 1.25rem; display:flex; flex-direction:column; gap:0.75rem; list-style:none;">
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">01</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Architected multi-agent systems capable of autonomously performing tasks such as data
+                      scraping, information retrieval, and workflow automation.</span>
+                    <button class="deep-dive-btn" data-deep-dive="phebsoft">▸ DEEP DIVE</button>
+                    <span
+                      style="display:block; margin-top:2px; font-family:var(--font-mono); font-size:11px; color:var(--signal);">→
+                      Autonomous multi-agent coordination</span>
+                  </div>
+                </li>
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">02</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Developed RAG pipelines with dense vector embeddings to enable contextual Q&A across
+                      large-scale product documentation datasets.</span>
+                  </div>
+                </li>
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">03</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Designed scalable AI APIs using FastAPI, delivering real-time inference with sub-second
+                      turnaround.</span>
+                  </div>
+                </li>
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">04</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Deployed Docker-based AI microservices on GCP VM Compute Engine, streamlining integration
+                      between ML models and production backend systems.</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div style="margin-top: 1.25rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+                <span class="tag-badge">LangGraph</span>
+                <span class="tag-badge">Multi-Agent Systems</span>
+                <span class="tag-badge">FastAPI</span>
+                <span class="tag-badge">RAG</span>
+                <span class="tag-badge">Vector Search</span>
+                <span class="tag-badge">GCP VM</span>
+                <span class="tag-badge">Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2: NASTP -->
+          <article class="timeline-item">
+            <span class="marker-dot"></span>
+
+            <div style="grid-column: span 12 / span 3;">
+              <div class="font-display-italic"
+                style="font-size: clamp(2rem, 4vw, 3.2rem); color:var(--fg-2); line-height:1;">
+                2025
+              </div>
+              <div class="caption" style="margin-top: 0.5rem;">// DEFENCE AI</div>
+              <div class="caption" style="margin-top: 0.25rem;">02/2025 – 09/2025</div>
+              <div class="caption" style="margin-top: 0.25rem;">Rawalpindi, Pakistan</div>
+            </div>
+
+            <div style="grid-column: span 12 / span 9;">
+              <h3 class="font-display"
+                style="font-size: clamp(1.4rem, 2.5vw, 1.9rem); line-height: 1.1; letter-spacing: -0.02em;">
+                AI Engineer<br>
+                <span class="font-display-italic" style="color:var(--fg-2);">NASTP (National Aerospace Science & Tech
+                  Park)</span>
+              </h3>
+
+              <ul style="margin-top: 1.25rem; display:flex; flex-direction:column; gap:0.75rem; list-style:none;">
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">01</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Processed and curated 100k+ digital forensic records for AI model training, fine-tuning, and
+                      systematic evaluation.</span>
+                    <button class="deep-dive-btn" data-deep-dive="nastp">▸ DEEP DIVE</button>
+                    <span
+                      style="display:block; margin-top:2px; font-family:var(--font-mono); font-size:11px; color:var(--signal);">→
+                      100k+ Digital forensic records curated</span>
+                  </div>
+                </li>
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">02</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Fine-tuned transformer-based language models for document classification and semantic
+                      retrieval using AWS SageMaker.</span>
+                    <span
+                      style="display:block; margin-top:2px; font-family:var(--font-mono); font-size:11px; color:var(--signal);">→
+                      +18% categorisation accuracy improvement</span>
+                  </div>
+                </li>
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">03</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Delivered 5+ RESTful AI APIs covering OCR, speech, and voice processing using Python and
+                      FastAPI.</span>
+                  </div>
+                </li>
+                <li style="display:grid; grid-template-columns: 1.5rem 1fr; font-size: 13.5px; line-height: 1.55;">
+                  <span class="font-mono" style="color:var(--signal);">04</span>
+                  <div style="color:var(--fg-2);">
+                    <span>Optimised model serving pipelines achieving &lt;400ms inference latency across all production
+                      endpoints.</span>
+                    <span
+                      style="display:block; margin-top:2px; font-family:var(--font-mono); font-size:11px; color:var(--signal);">→
+                      sub-400ms production latency</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div style="margin-top: 1.25rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+                <span class="tag-badge">AWS SageMaker</span>
+                <span class="tag-badge">Transformers</span>
+                <span class="tag-badge">FastAPI</span>
+                <span class="tag-badge">OCR</span>
+                <span class="tag-badge">Speech AI</span>
+                <span class="tag-badge">PyTorch</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3: Education -->
+          <article class="timeline-item">
+            <span class="marker-dot"></span>
+
+            <div style="grid-column: span 12 / span 3;">
+              <div class="font-display-italic"
+                style="font-size: clamp(2rem, 4vw, 3.2rem); color:var(--fg-2); line-height:1;">
+                2021
+              </div>
+              <div class="caption" style="margin-top: 0.5rem;">// ACADEMIC ORIGIN</div>
+              <div class="caption" style="margin-top: 0.25rem;">09/2021 – 07/2025</div>
+              <div class="caption" style="margin-top: 0.25rem;">Islamabad, Pakistan</div>
+            </div>
+
+            <div style="grid-column: span 12 / span 9;">
+              <h3 class="font-display"
+                style="font-size: clamp(1.4rem, 2.5vw, 1.9rem); line-height: 1.1; letter-spacing: -0.02em;">
+                Bachelor’s Degree in Computer Sciences<br>
+                <span class="font-display-italic" style="color:var(--fg-2);">Air University, Islamabad</span>
+              </h3>
+
+              <p style="color:var(--fg-2); font-size: 13.5px; margin-top: 1rem; line-height: 1.6;">
+                Specialized in Deep Learning, Computer Vision, and Distributed Systems. Authored peer-reviewed research
+                on generative adversarial models and attention-driven feature fusion, culminating in international
+                publication in Springer. GPA: 3.10 / 4.00.
+              </p>
+
+              <div style="margin-top: 1.25rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+                <span class="tag-badge">Computer Science</span>
+                <span class="tag-badge">Deep Learning</span>
+                <span class="tag-badge">Computer Vision</span>
+                <span class="tag-badge">Distributed Systems</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 05: Personal Builds & Production Manifest ================= -->
+    <section id="manifest" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§05</span>
+          <span class="caption-signal">// manifest · production systems & builds</span>
+          <span class="caption">6 PRODUCTION PROJECTS + RESEARCH</span>
+        </div>
+
+        <div
+          style="display:grid; grid-template-columns: repeat(12, 1fr); gap: 2rem; align-items: start; margin-bottom: 2.5rem;">
+          <div style="grid-column: span 12 / span 6;">
+            <h2 class="font-display"
+              style="font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.04; letter-spacing: -0.025em;">
+              Production builds<br>
+              <span class="font-display-italic" style="color:var(--signal);">shipped & deployed.</span>
+            </h2>
+            <p style="color:var(--fg-2); margin-top: 1rem; line-height: 1.6;">
+              Full-stack AI systems engineered for enterprises, defence, and high-velocity SaaS products. Click <span
+                class="font-mono" style="color:var(--signal);">▸ DEEP DIVE</span> for full architecture specs,
+              pipelines, and results.
+            </p>
+          </div>
+        </div>
+
+        <!-- Manifest Table -->
+        <div class="manifest-table">
+          <div class="manifest-row header">
+            <span>#</span>
+            <span>SYSTEM</span>
+            <span>STACK & PURPOSE</span>
+            <span style="text-align:right;">ACTION</span>
+          </div>
+
+          <!-- 01 Afterdesk AI -->
+          <div class="manifest-row">
+            <span class="font-mono text-[11px]" style="color:var(--fg-3);">01</span>
+            <div>
+              <div class="font-display" style="font-size:1.25rem; letter-spacing:-0.015em;">
+                <a href="https://afterdesk.ai" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--fg); text-decoration:none;" class="hover:text-[var(--signal)]">Afterdesk AI</a>
+              </div>
+              <div class="caption" style="margin-top:2px;">Production AI Document Automation</div>
+            </div>
+            <div style="font-size: 13px; color:var(--fg-2); line-height:1.5;">
+              Automated document pipeline using OpenCV & computer vision to analyze arbitrary PDF templates, detect
+              bounding boxes and form fields, and render dynamic structured data.
+              <div style="margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                <span class="tag-badge">OpenCV</span>
+                <span class="tag-badge">Python</span>
+                <span class="tag-badge">FastAPI</span>
+                <span class="tag-badge">PyMuPDF</span>
+              </div>
+            </div>
+            <div class="manifest-actions">
+              <a href="https://afterdesk.ai" target="_blank" rel="noopener noreferrer" class="manifest-live-link">LIVE
+                ↗</a>
+              <button class="deep-dive-btn" data-deep-dive="afterdesk">▸ DEEP DIVE</button>
+            </div>
+          </div>
+
+          <!-- 02 Syscore AI -->
+          <div class="manifest-row">
+            <span class="font-mono text-[11px]" style="color:var(--fg-3);">02</span>
+            <div>
+              <div class="font-display" style="font-size:1.25rem; letter-spacing:-0.015em;">
+                Syscore AI
+              </div>
+              <div class="caption" style="margin-top:2px;">Enterprise ERP AI Middleware</div>
+            </div>
+            <div style="font-size: 13px; color:var(--fg-2); line-height:1.5;">
+              AI middleware for SYSPRO ERP using AWS Bedrock foundation models and S3 XML record storage for natural
+              language & multimodal input parsing. 10x faster data retrieval and ~99% error reduction.
+              <div style="margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                <span class="tag-badge">AWS Bedrock</span>
+                <span class="tag-badge">AWS S3</span>
+                <span class="tag-badge">FastAPI</span>
+                <span class="tag-badge">SYSPRO ERP</span>
+              </div>
+            </div>
+            <div class="manifest-actions">
+              <span class="manifest-internal-badge">INTERNAL</span>
+              <button class="deep-dive-btn" data-deep-dive="syscore">▸ DEEP DIVE</button>
+            </div>
+          </div>
+
+          <!-- 03 Speakify AI -->
+          <div class="manifest-row">
+            <span class="font-mono text-[11px]" style="color:var(--fg-3);">03</span>
+            <div>
+              <div class="font-display" style="font-size:1.25rem; letter-spacing:-0.015em;">
+                <a href="https://www.wearespeakify.com" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--fg); text-decoration:none;" class="hover:text-[var(--signal)]">Speakify AI</a>
+              </div>
+              <div class="caption" style="margin-top:2px;">B2B Marketplace & RAG Matching</div>
+            </div>
+            <div style="font-size: 13px; color:var(--fg-2); line-height:1.5;">
+              Async FastAPI + PostgreSQL backend across 15+ API domains. Hybrid RAG matching engine (Cohere + Pinecone +
+              Langfuse) managing 360+ user profiles, Stripe payouts, and DocuSign workflows.
+              <div style="margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                <span class="tag-badge">FastAPI</span>
+                <span class="tag-badge">PostgreSQL</span>
+                <span class="tag-badge">Cohere</span>
+                <span class="tag-badge">Pinecone</span>
+                <span class="tag-badge">Langfuse</span>
+                <span class="tag-badge">Stripe</span>
+              </div>
+            </div>
+            <div class="manifest-actions">
+              <a href="https://www.wearespeakify.com" target="_blank" rel="noopener noreferrer"
+                class="manifest-live-link">LIVE ↗</a>
+              <button class="deep-dive-btn" data-deep-dive="speakify">▸ DEEP DIVE</button>
+            </div>
+          </div>
+
+          <!-- 04 Kernel-Global -->
+          <div class="manifest-row">
+            <span class="font-mono text-[11px]" style="color:var(--fg-3);">04</span>
+            <div>
+              <div class="font-display" style="font-size:1.25rem; letter-spacing:-0.015em;">
+                <a href="https://www.kernel-global.com" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--fg); text-decoration:none;" class="hover:text-[var(--signal)]">Kernel-Global</a>
+              </div>
+              <div class="caption" style="margin-top:2px;">GenAI Microservice & Security</div>
+            </div>
+            <div style="font-size: 13px; color:var(--fg-2); line-height:1.5;">
+              Async GenAI microservice automating candidate assessment. Dynamic MySQL context summarization cut token
+              use by ~35%. Hardened guardrails against prompt injection with 40+ unit/security tests.
+              <div style="margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                <span class="tag-badge">Azure OpenAI</span>
+                <span class="tag-badge">FastAPI</span>
+                <span class="tag-badge">MySQL</span>
+                <span class="tag-badge">Locust</span>
+                <span class="tag-badge">Docker</span>
+              </div>
+            </div>
+            <div class="manifest-actions">
+              <a href="https://www.kernel-global.com" target="_blank" rel="noopener noreferrer"
+                class="manifest-live-link">LIVE ↗</a>
+              <button class="deep-dive-btn" data-deep-dive="kernel">▸ DEEP DIVE</button>
+            </div>
+          </div>
+
+          <!-- 05 AutoML Platform -->
+          <div class="manifest-row">
+            <span class="font-mono text-[11px]" style="color:var(--fg-3);">05</span>
+            <div>
+              <div class="font-display" style="font-size:1.25rem; letter-spacing:-0.015em;">
+                AutoML Platform
+              </div>
+              <div class="caption" style="margin-top:2px;">Self-Service MLOps Platform</div>
+            </div>
+            <div style="font-size: 13px; color:var(--fg-2); line-height:1.5;">
+              Automated model lifecycle across training, evaluation, Docker deployment, and drift monitoring. Cut
+              average model deployment time by ~60% and setup overhead by ~70% via Prometheus and Grafana.
+              <div style="margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                <span class="tag-badge">MLflow</span>
+                <span class="tag-badge">Docker</span>
+                <span class="tag-badge">Scikit-learn</span>
+                <span class="tag-badge">Prometheus</span>
+                <span class="tag-badge">Grafana</span>
+              </div>
+            </div>
+            <div class="manifest-actions">
+              <span class="manifest-internal-badge">INTERNAL</span>
+              <button class="deep-dive-btn" data-deep-dive="automl">▸ DEEP DIVE</button>
+            </div>
+          </div>
+
+          <!-- 06 View-Invariant Re-ID -->
+          <div class="manifest-row">
+            <span class="font-mono text-[11px]" style="color:var(--fg-3);">06</span>
+            <div>
+              <div class="font-display" style="font-size:1.25rem; letter-spacing:-0.015em;">
+                <a href="https://doi.org/10.1007/s00371-025-04300-1" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--fg); text-decoration:none;" class="hover:text-[var(--signal)]">Pose-Aware
+                  AE-GAN</a>
+              </div>
+              <div class="caption" style="margin-top:2px;">Deep Learning & Computer Vision Research</div>
+            </div>
+            <div style="font-size: 13px; color:var(--fg-2); line-height:1.5;">
+              Synthesizes view-invariant features across non-overlapping camera networks. +5% top-1 accuracy gain over
+              baselines. Validated and published in Springer's <em>The Visual Computer</em>.
+              <div style="margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.35rem;">
+                <span class="tag-badge">PyTorch</span>
+                <span class="tag-badge">GANs</span>
+                <span class="tag-badge">Attention</span>
+                <span class="tag-badge">OpenCV</span>
+                <span class="tag-badge">Springer</span>
+              </div>
+            </div>
+            <div class="manifest-actions">
+              <a href="https://doi.org/10.1007/s00371-025-04300-1" target="_blank" rel="noopener noreferrer"
+                class="manifest-live-link">PAPER ↗</a>
+              <button class="deep-dive-btn" data-deep-dive="reid">▸ DEEP DIVE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 05.5: Research & Open Source Spotlight ================= -->
+    <section id="research" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§05.5</span>
+          <span class="caption-signal">// publications & open source</span>
+          <span class="caption">PEER REVIEW & DETERMINISTIC PACKAGES</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;">
+          <!-- Springer Publication Card -->
+          <div style="grid-column: span 12 / span 6;">
+            <div class="card-frame ticked" style="height:100%; display:flex; flex-direction:column;">
+              <span class="tick-tl"></span>
+              <span class="tick-tr"></span>
+              <span class="tick-bl"></span>
+              <span class="tick-br"></span>
+
+              <div class="caption-signal" style="margin-bottom: 0.75rem;">// PEER-REVIEWED PUBLICATION</div>
+              <h3 class="font-display"
+                style="font-size: 1.5rem; line-height: 1.2; letter-spacing:-0.015em; margin-bottom: 0.75rem;">
+                View-Invariant Person Re-Identification in Camera Networks by Pose-Aware AE-GAN and Attention-Driven
+                Feature Fusion
+              </h3>
+
+              <div class="font-mono text-[12px]" style="color:var(--signal); margin-bottom: 1rem;">
+                Published in The Visual Computer (Springer Nature)<br>
+                DOI: <a href="https://doi.org/10.1007/s00371-025-04300-1" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--fg); text-decoration:underline;">10.1007/s00371-025-04300-1</a>
+              </div>
+
+              <p style="color:var(--fg-2); font-size: 13.5px; line-height: 1.65; flex-grow: 1;">
+                Addresses the fundamental challenge of surveillance camera networks where subjects appear under
+                disparate angles, illuminations, and occlusions. Combines pose autoencoders with spatial and channel
+                attention mechanisms to distill camera-agnostic biometric representations, achieving a statistically
+                significant +5% top-1 gain over previous state-of-the-art architectures.
+              </p>
+
+              <div style="margin-top: 1.5rem; display:flex; gap:0.6rem;">
+                <a href="https://doi.org/10.1007/s00371-025-04300-1" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  READ PAPER ON SPRINGER ↗
+                </a>
+                <button class="btn" data-deep-dive="reid">
+                  RESEARCH SPECS
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Open Source ctxintel Card -->
+          <div style="grid-column: span 12 / span 6;">
+            <div class="card-frame ticked" style="height:100%; display:flex; flex-direction:column;">
+              <span class="tick-tl"></span>
+              <span class="tick-tr"></span>
+              <span class="tick-bl"></span>
+              <span class="tick-br"></span>
+
+              <div class="caption-signal" style="margin-bottom: 0.75rem;">// OPEN-SOURCE PYTHON PACKAGE</div>
+              <h3 class="font-display"
+                style="font-size: 1.5rem; line-height: 1.2; letter-spacing:-0.015em; margin-bottom: 0.5rem;">
+                ctxintel — LLM Context Optimizer
+              </h3>
+              <div class="font-mono text-[12px]" style="color:var(--pulse); margin-bottom: 1rem;">
+                AVAILABLE ON PYPI · ZERO EXTERNAL API OVERHEAD
+              </div>
+
+              <p style="color:var(--fg-2); font-size: 13.5px; line-height: 1.65; margin-bottom: 1.25rem;">
+                A 6-stage deterministic context optimization pipeline (semantic chunk ranking, NER extraction,
+                extractive compression, memory persistence, and token budget bin-packing) engineered to compress prompt
+                overhead by 30–50% completely on-device with zero external API calls.
+              </p>
+
+              <!-- Interactive Terminal Block -->
+              <div class="terminal-block">
+                <div class="terminal-header">
+                  <div class="terminal-dots">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                  </div>
+                  <span>bash · pip</span>
+                  <button class="copy-cmd-btn" data-copy="pip install ctxintel">COPY</button>
+                </div>
+                <div class="terminal-body font-mono text-[12px]">
+                  <span style="color:var(--signal);">$</span> pip install ctxintel<br>
+                  <span style="color:var(--fg-3);"># 6-stage deterministic pipeline</span><br>
+                  <span style="color:var(--fg-2);">from ctxintel import ContextOptimizer<br>
+                    opt = ContextOptimizer(budget=2048)<br>
+                    compact_ctx = opt.compress(raw_text)</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.5rem; display:flex; gap:0.6rem;">
+                <a href="https://pypi.org/project/ctxintel" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  VIEW ON PYPI ↗
+                </a>
+                <button class="btn" data-deep-dive="ctxintel">
+                  PIPELINE DEEP DIVE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 06: Capability Matrix ================= -->
+    <section id="capability" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§06</span>
+          <span class="caption-signal">// capability · year × technology matrix</span>
+          <span class="caption">VERIFIED PRODUCTION DEPTH</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;">
+          <div style="grid-column: span 12 / span 4;">
+            <h2 class="font-display"
+              style="font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.04; letter-spacing: -0.025em;">
+              Surface area —<br>
+              <span class="font-display-italic" style="color:var(--signal);">instrumented.</span>
+            </h2>
+            <p style="color:var(--fg-2); margin-top: 1rem; line-height: 1.6;">
+              Skill tags on resumes can be arbitrary. This matrix records the exact depth of adoption across each
+              technology from 2022 to 2026.
+            </p>
+
+            <div class="caption" style="margin-top: 2rem; margin-bottom: 0.75rem;">// LEGEND</div>
+            <div
+              style="display:flex; flex-direction:column; gap:0.6rem; font-family:var(--font-mono); font-size:12px; color:var(--fg-2);">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <div class="level-pips">
+                  <span class="pip"></span><span class="pip"></span><span class="pip"></span>
+                </div>
+                <span>not used / before period</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <div class="level-pips">
+                  <span class="pip touched"></span><span class="pip"></span><span class="pip"></span>
+                </div>
+                <span>experimental / research</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <div class="level-pips">
+                  <span class="pip prod"></span><span class="pip prod"></span><span class="pip"></span>
+                </div>
+                <span>production-grade</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <div class="level-pips">
+                  <span class="pip shipped"></span><span class="pip shipped"></span><span class="pip shipped"></span>
+                </div>
+                <span style="color:var(--signal);">shipped at scale / core expertise</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Matrix Grid -->
+          <div style="grid-column: span 12 / span 8;">
+            <div class="matrix-container">
+              <div class="matrix-header">
+                <span>TECHNOLOGY</span>
+                <span style="text-align:center;">2022</span>
+                <span style="text-align:center;">2023</span>
+                <span style="text-align:center;">2024</span>
+                <span style="text-align:center;">2025</span>
+                <span style="text-align:center; color:var(--signal);">2026</span>
+              </div>
+
+              <!-- AI / ML & LLMs -->
+              <div class="matrix-group-title">// AI / ML & MULTI-AGENT SYSTEMS</div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">Python</span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">LangGraph & Multi-Agent</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">PyTorch & Transformers</span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">OpenCV & Computer Vision</span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">RAG (Pinecone / FAISS / pgvector)</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <!-- Backend & MLOps -->
+              <div class="matrix-group-title">// BACKEND & CLOUD INFRASTRUCTURE</div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">FastAPI (Async Python)</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">Docker & Microservices</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">AWS (SageMaker · Bedrock · S3)</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">GCP (Compute Engine / Cloud Run)</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+
+              <div class="matrix-row">
+                <span style="font-weight:500;">MLflow, Prometheus & Grafana</span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip touched"></span><span class="pip"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip prod"></span><span class="pip prod"></span><span
+                    class="pip"></span></span>
+                <span style="text-align:center;"><span class="pip shipped"></span><span class="pip shipped"></span><span
+                    class="pip shipped"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 07: FAQ Accordion ================= -->
+    <section id="faq" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§07</span>
+          <span class="caption-signal">// faq · the questions recruiters & leads ask</span>
+          <span class="caption">DIRECT ANSWERS</span>
+        </div>
+
+        <div style="max-width: 64rem; margin-bottom: 2.5rem;">
+          <h2 class="font-display"
+            style="font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; letter-spacing: -0.03em;">
+            Straightforward<br>
+            <span class="font-display-italic" style="color:var(--signal);">technical answers.</span>
+          </h2>
+        </div>
+
+        <div class="faq-accordion" style="max-width: 920px;">
+          <!-- Q01 -->
+          <details open>
+            <summary>
+              <span class="faq-num">Q01</span>
+              <span class="faq-question">What is Muhammad Usman's core specialty?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              My core specialty is shipping low-latency, deterministic AI systems: multi-agent graph workflows
+              (LangGraph), hybrid RAG pipelines (Pinecone/FAISS/Cohere), and computer vision applications (OpenCV &
+              PyTorch GANs). I back every model with production-grade asynchronous FastAPI microservices,
+              containerization with Docker, and observability via Langfuse and Prometheus.
+            </div>
+          </details>
+
+          <!-- Q02 -->
+          <details>
+            <summary>
+              <span class="faq-num">Q02</span>
+              <span class="faq-question">What is ctxintel and why did you build it?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <code>ctxintel</code> is an open-source Python package on PyPI created to eliminate LLM token bloat
+              without incurring third-party API latency. It implements a 6-stage deterministic pipeline (TF-IDF semantic
+              ranking, spaCy NER entity extraction, extractive compression, local memory, PII guardrails, and token
+              budget packing). It runs completely locally with zero external API calls.
+            </div>
+          </details>
+
+          <!-- Q03 -->
+          <details>
+            <summary>
+              <span class="faq-num">Q03</span>
+              <span class="faq-question">What was your contribution to defence AI at NASTP?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              At NASTP (National Aerospace Science and Technology Park), I curated and processed over 100,000 digital
+              forensic records, fine-tuned transformer language models on AWS SageMaker (+18% categorization accuracy
+              gain), and deployed 5+ RESTful AI APIs across OCR, speech, and voice with &lt;400ms inference latency
+              across all endpoints.
+            </div>
+          </details>
+
+          <!-- Q04 -->
+          <details>
+            <summary>
+              <span class="faq-num">Q04</span>
+              <span class="faq-question">Can you tell us about your Springer publication?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              My paper <em>"View-Invariant Person Re-Identification in Camera Networks by Pose-Aware AE-GAN and
+                Attention-Driven Feature Fusion"</em> was published in Springer's peer-reviewed journal <em>The Visual
+                Computer</em> (DOI: 10.1007/s00371-025-04300-1). We designed an Autoencoder GAN that synthesizes
+              perspective invariants and fuses spatial/channel attention to achieve a +5% top-1 accuracy improvement
+              over baseline architectures.
+            </div>
+          </details>
+
+          <!-- Q05 -->
+          <details>
+            <summary>
+              <span class="faq-num">Q05</span>
+              <span class="faq-question">How do you approach RAG vs. Fine-Tuning?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              I view them as complementary primitives rather than alternatives. Fine-tuning (LoRA, AWS SageMaker) is the
+              right choice for style alignment, specialized vocabulary, classification tasks, and deterministic
+              formatting. RAG (Pinecone, FAISS, hybrid lexical + dense search) is required for dynamic knowledge
+              injection, provenance audit trails, and zero-latency knowledge updates. For most enterprise systems, I
+              combine fine-tuned classifiers or summarizers with hybrid vector RAG.
+            </div>
+          </details>
+
+          <!-- Q06 -->
+          <details>
+            <summary>
+              <span class="faq-num">Q06</span>
+              <span class="faq-question">Where are you based and what roles are you open to?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              I am based in Islamabad, Pakistan, and currently serve as an AI Engineer at Phebsoft working on
+              multi-agent systems. I am open to high-impact Senior AI/ML Engineering and Applied AI roles (full-time
+              remote, hybrid, or relocation) where I can design production agent infrastructure, low-latency neural
+              microservices, or novel vision pipelines.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="hairline"></div>
+    </div>
+
+    <!-- ================= Section 08: Contact & Comms Terminal ================= -->
+    <section id="contact" class="section-pad">
+      <div class="shell">
+        <div class="section-strip">
+          <span class="chapter">§08</span>
+          <span class="caption-signal">// comms · establish direct connection</span>
+          <span class="caption">DIRECT DISPATCH</span>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap: 2rem;">
+          <div style="grid-column: span 12 / span 7;">
+            <h2 class="font-display"
+              style="font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.02; letter-spacing: -0.03em;">
+              Ready to ship.<br>
+              <span class="font-display-italic" style="color:var(--signal);">Open comms.</span>
+            </h2>
+
+            <p style="color:var(--fg-2); font-size: 1.15rem; margin-top: 1.25rem; line-height: 1.6; max-width: 580px;">
+              Whether you are architecting a multi-agent system from scratch, scaling real-time vector search across
+              millions of documents, or optimizing neural inference down to the millisecond, I respond within 24 hours.
+            </p>
+
+            <div style="margin-top: 2rem; display:flex; flex-direction:column; gap:1rem; max-width: 540px;">
+              <!-- Email Box -->
+              <div
+                style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.25rem; background:var(--panel); border:1px solid var(--rule); border-radius:2px;">
+                <div>
+                  <div class="caption">// EMAIL (FASTEST)</div>
+                  <a href="mailto:mu232427@gmail.com" class="font-mono text-[13.5px]"
+                    style="color:var(--fg); text-decoration:none;">mu232427@gmail.com</a>
+                </div>
+                <button class="copy-text-btn" data-copy="mu232427@gmail.com"
+                  style="background:var(--panel-2); border:1px solid var(--rule); color:var(--fg-2); font-family:var(--font-mono); font-size:10.5px; padding:4px 8px; border-radius:2px; cursor:pointer;">COPY</button>
+              </div>
+
+              <!-- Phone Box -->
+              <div
+                style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.25rem; background:var(--panel); border:1px solid var(--rule); border-radius:2px;">
+                <div>
+                  <div class="caption">// DIRECT PHONE / WHATSAPP</div>
+                  <a href="tel:+923359508369" class="font-mono text-[13.5px]"
+                    style="color:var(--fg); text-decoration:none;">+92 335 9508369</a>
+                </div>
+                <button class="copy-text-btn" data-copy="+923359508369"
+                  style="background:var(--panel-2); border:1px solid var(--rule); color:var(--fg-2); font-family:var(--font-mono); font-size:10.5px; padding:4px 8px; border-radius:2px; cursor:pointer;">COPY</button>
+              </div>
+
+              <!-- Location Box -->
+              <div
+                style="display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.25rem; background:var(--panel); border:1px solid var(--rule); border-radius:2px;">
+                <div>
+                  <div class="caption">// BASE COORDINATES</div>
+                  <div class="font-mono text-[13.5px]" style="color:var(--fg);">Islamabad 44000, ICT, Pakistan (PKT ·
+                    GMT+5)</div>
+                </div>
+                <span class="live-beacon"><span class="live-dot"></span> OPEN</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="grid-column: span 12 / span 5;">
+            <div class="card-frame ticked" style="height:100%;">
+              <span class="tick-tl"></span>
+              <span class="tick-tr"></span>
+              <span class="tick-bl"></span>
+              <span class="tick-br"></span>
+
+              <div class="caption-signal" style="margin-bottom: 1rem;">// EXTERNAL PROFILES & RESUME</div>
+
+              <p style="color:var(--fg-2); font-size: 13.5px; line-height: 1.6; margin-bottom: 1.5rem;">
+                Explore complete open-source repositories on GitHub, connect for professional inquiries on LinkedIn, or
+                download the full verified curriculum vitae.
+              </p>
+
+              <div style="display:flex; flex-direction:column; gap:0.75rem;">
+                <a href="https://github.com/nccsuzzi" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                  style="justify-content:flex-start;">
+                  <span>→ GITHUB:</span> <span style="font-weight:400; text-transform:none;">github.com/nccsuzzi</span>
+                </a>
+
+                <a href="https://linkedin.com/in/muhammad-usman-2aaa69241" target="_blank" rel="noopener noreferrer"
+                  class="btn" style="justify-content:flex-start;">
+                  <span>→ LINKEDIN:</span> <span
+                    style="font-weight:400; text-transform:none;">in/muhammad-usman-2aaa69241</span>
+                </a>
+
+                <a href="https://pypi.org/project/ctxintel" target="_blank" rel="noopener noreferrer" class="btn"
+                  style="justify-content:flex-start;">
+                  <span>→ PYPI PACKAGE:</span> <span
+                    style="font-weight:400; text-transform:none;">pypi.org/project/ctxintel</span>
+                </a>
+
+                <a href="assets/MuhammadUsmanProfessionalCV.pdf" target="_blank" download="MuhammadUsmanProfessionalCV.pdf" class="btn"
+                  style="justify-content:flex-start;">
+                  <span>↓ DOWNLOAD CV:</span> <span
+                    style="font-weight:400; text-transform:none;">MuhammadUsmanProfessionalCV.pdf</span>
+                </a>
+
+                <a href="mailto:mu232427@gmail.com?subject=Inquiry%20from%20Portfolio" class="btn"
+                  style="justify-content:flex-start; color:var(--signal);">
+                  <span>✉ DISPATCH DIRECT EMAIL</span>
+                </a>
+              </div>
+
+              <div class="hairline" style="margin-top: 2rem; margin-bottom: 1.25rem;"></div>
+
+              <div class="font-mono text-[11px]" style="color:var(--fg-3);">
+                © 2026 Muhammad Usman · Technical Field Report · Built with Vanilla HTML5, CSS & JS
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Deep Dive Modal Dialog ================= -->
+  <div id="modal-overlay" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container card-frame ticked">
+      <span class="tick-tl"></span>
+      <span class="tick-tr"></span>
+      <span class="tick-bl"></span>
+      <span class="tick-br"></span>
+
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">ESC ✕</button>
+
+      <div id="modal-cat" class="caption-signal" style="margin-bottom:0.4rem;">// CATEGORY</div>
+      <h2 id="modal-title" class="font-display"
+        style="font-size:clamp(1.8rem, 3vw, 2.4rem); letter-spacing:-0.02em; margin-bottom:0.4rem;">
+        Project Title
+      </h2>
+      <div id="modal-status" class="font-mono text-[11px]" style="color:var(--signal); margin-bottom:1.25rem;">
+        STATUS
+      </div>
+
+      <div id="modal-stack" style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1.5rem;">
+        <!-- Stack tags injected via JS -->
+      </div>
+
+      <div class="hairline" style="margin-bottom:1.5rem;"></div>
+
+      <div id="modal-body">
+        <!-- Body injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
