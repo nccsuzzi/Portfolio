@@ -29,7 +29,11 @@ Soft Skills:
 ================================================================================
 EXPERIENCE
 ================================================================================
-AI Engineer                                                         09/2025 – Present
+Software Engineer                                                   09/2026 – Present
+8x, Islamabad, Pakistan
+• Working on frontier projects across frontend, backend, AI, and DevOps.
+
+AI Engineer                                                         09/2025 – 08/2026
 Phebsoft, Islamabad, Pakistan (Client Partnership: Gitwork)
 • Architected multi-agent systems capable of autonomously performing tasks such as data scraping, information retrieval, and workflow automation.
 • Developed RAG pipelines with vector embeddings to enable contextual Q&A across large product documentation datasets.
