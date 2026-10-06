@@ -135,9 +135,9 @@ const DEEP_DIVES = {
   phebsoft: {
     title: "Phebsoft · Client: Gitwork",
     category: "Autonomous Multi-Agent Systems & RAG",
-    status: "CURRENT ROLE · 09/2025 - PRESENT",
+    status: "AI ENGINEER · 09/2025 - 08/2026",
     stack: ["LangGraph", "Multi-Agent Systems", "FastAPI", "GCP VM", "Docker", "RAG", "Vector Search"],
-    summary: "Architecting autonomous multi-agent systems and real-time RAG pipelines for Gitwork product documentation and workflow automation.",
+    summary: "Architected autonomous multi-agent systems and real-time RAG pipelines for Gitwork product documentation and workflow automation.",
     architecture: [
       "1. Autonomous Multi-Agent Loop: Coordinated agents using LangGraph for multi-step scraping, contextual retrieval, and API-driven execution.",
       "2. Contextual RAG Pipeline: Vector embeddings with dense retrieval and reranking for high-accuracy product QA.",
@@ -206,6 +206,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initArchInspector();
   initModals();
   initCopyButtons();
+  initReveals();
+  initCounters();
+  initProjectRail();
 });
 
 // --- Islamabad Real-time Clock (GMT+5) ---
@@ -438,4 +441,173 @@ function initCopyButtons() {
       });
     });
   });
+}
+
+const PREFERS_MOTION = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// --- Scroll Reveals ---
+// Content is visible by default; reveals are only armed when motion is allowed.
+function initReveals() {
+  if (!PREFERS_MOTION || !("IntersectionObserver" in window)) return;
+
+  const groups = [
+    ".section-strip",
+    "section h2.font-display",
+    ".timeline-item",
+    ".metric-stat-box",
+    ".card-frame",
+    "#faq details",
+    ".manifest-rail .manifest-row"
+  ];
+  groups.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((el, i) => {
+      el.classList.add("reveal");
+      // Stagger siblings that arrive together (cards, rows)
+      el.style.setProperty("--reveal-delay", `${(i % 6) * 0.06}s`);
+    });
+  });
+  document.querySelectorAll(".manifesto-lines .reveal").forEach((el, i) => {
+    el.style.setProperty("--reveal-delay", `${i * 0.12}s`);
+  });
+
+  document.documentElement.classList.add("motion");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          el.classList.add("in");
+          observer.unobserve(el);
+          // Hand transform/transition back to the element's own hover styles
+          setTimeout(() => {
+            el.classList.remove("reveal", "in");
+            el.style.removeProperty("--reveal-delay");
+          }, 1300);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+}
+
+// --- Count-up Numbers ---
+// Markup holds the final value, so no-JS and reduced-motion visitors see real numbers.
+function initCounters() {
+  if (!PREFERS_MOTION || !("IntersectionObserver" in window)) return;
+
+  const counters = document.querySelectorAll(".count[data-to]");
+  const run = (el) => {
+    const target = parseFloat(el.dataset.to);
+    const decimals = parseInt(el.dataset.dec || "0", 10);
+    const duration = 1400;
+    const start = performance.now();
+    const step = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = (target * eased).toFixed(decimals);
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          run(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
+  counters.forEach((el) => {
+    el.textContent = "0";
+    observer.observe(el);
+  });
+}
+
+// --- Horizontal Project Rail ---
+function initProjectRail() {
+  const rail = document.getElementById("project-rail");
+  const dotsEl = document.getElementById("rail-dots");
+  if (!rail) return;
+
+  const cards = [...rail.querySelectorAll(".manifest-row:not(.header)")];
+  const step = () => cards[0].offsetWidth + parseFloat(getComputedStyle(rail).columnGap || 0);
+  const behavior = PREFERS_MOTION ? "smooth" : "auto";
+
+  document.querySelectorAll("[data-rail]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const dir = btn.dataset.rail === "next" ? 1 : -1;
+      rail.scrollBy({ left: dir * step(), behavior });
+    });
+  });
+
+  if (dotsEl) {
+    cards.forEach((card, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Project ${i + 1}`);
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => rail.scrollTo({ left: i * step(), behavior }));
+      dotsEl.appendChild(dot);
+    });
+    const dots = [...dotsEl.children];
+    rail.addEventListener(
+      "scroll",
+      () => {
+        const atEnd = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 4;
+        const idx = atEnd ? cards.length - 1 : Math.round(rail.scrollLeft / step());
+        dots.forEach((d, i) => d.classList.toggle("active", i === idx));
+      },
+      { passive: true }
+    );
+  }
+
+  // Mouse drag-to-scroll (touch and trackpads already scroll natively)
+  let startX = 0;
+  let startScroll = 0;
+  let moved = false;
+  let down = false;
+
+  rail.addEventListener("pointerdown", (e) => {
+    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    down = true;
+    moved = false;
+    startX = e.clientX;
+    startScroll = rail.scrollLeft;
+  });
+  window.addEventListener("pointermove", (e) => {
+    if (!down) return;
+    const dx = e.clientX - startX;
+    if (!moved && Math.abs(dx) > 5) {
+      moved = true;
+      rail.classList.add("dragging");
+    }
+    if (moved) rail.scrollLeft = startScroll - dx;
+  });
+  window.addEventListener("pointerup", () => {
+    if (!down) return;
+    down = false;
+    if (moved) {
+      rail.classList.remove("dragging");
+      // Snap to the nearest card after a drag
+      rail.scrollTo({ left: Math.round(rail.scrollLeft / step()) * step(), behavior });
+    }
+  });
+  // Swallow the click that ends a drag so links and deep-dive buttons don't fire
+  rail.addEventListener(
+    "click",
+    (e) => {
+      if (moved) {
+        e.preventDefault();
+        e.stopPropagation();
+        moved = false;
+      }
+    },
+    true
+  );
 }
