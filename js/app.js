@@ -136,12 +136,12 @@ const DEEP_DIVES = {
     title: "Phebsoft · Client: Gitwork",
     category: "Autonomous Multi-Agent Systems & RAG",
     status: "AI ENGINEER · 09/2025 - 08/2026",
-    stack: ["LangGraph", "Multi-Agent Systems", "FastAPI", "GCP VM", "Docker", "RAG", "Vector Search"],
+    stack: ["LangGraph", "Multi-Agent Systems", "FastAPI", "GCP Compute Engine", "Docker", "RAG", "Vector Search"],
     summary: "Architected autonomous multi-agent systems and real-time RAG pipelines for Gitwork product documentation and workflow automation.",
     architecture: [
       "1. Autonomous Multi-Agent Loop: Coordinated agents using LangGraph for multi-step scraping, contextual retrieval, and API-driven execution.",
       "2. Contextual RAG Pipeline: Vector embeddings with dense retrieval and reranking for high-accuracy product QA.",
-      "3. High-Throughput FastAPI Services: Async endpoints deployed in containerized microservices on GCP VM Compute Engine."
+      "3. High-Throughput FastAPI Services: Async endpoints deployed in containerized microservices on GCP Compute Engine."
     ],
     impact: [
       "Sub-second multi-agent orchestration for end-to-end task automation.",
@@ -151,7 +151,7 @@ const DEEP_DIVES = {
   nastp: {
     title: "NASTP (National Aerospace Science and Technology Park)",
     category: "Defence AI & Scalable Language Models",
-    status: "AI ENGINEER · 02/2025 - 09/2025",
+    status: "AI ENGINEER · 02/2025 - 08/2025",
     stack: ["FastAPI", "AWS SageMaker", "PyTorch", "Transformers", "OCR", "Speech/Voice AI"],
     summary: "Curated 100k+ digital forensic records, fine-tuned transformer models on AWS SageMaker, and delivered 5+ production RESTful APIs with <400ms inference latency.",
     architecture: [
