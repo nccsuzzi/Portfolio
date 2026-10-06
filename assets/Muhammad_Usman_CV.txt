@@ -1,12 +1,12 @@
 # Muhammad Usman
-AI/ML Engineer | Computer Vision, LLMs & RAG Systems | Scalable Backend Engineering
+AI/ML Engineer | LLMs, RAG & AI Systems | Backend & Product Engineering
 Islamabad 44000, ICT, Pakistan | +92 335 9508369 | mu232427@gmail.com
 LinkedIn: linkedin.com/in/muhammad-usman-2aaa69241 | GitHub: github.com/nccsuzzi
 
 ================================================================================
 SUMMARY
 ================================================================================
-AI/ML Engineer with 1.5+ years of production experience shipping LLM systems, RAG pipelines, and computer vision applications across defence, enterprise, and SaaS domains. Proven track record of reducing operational overhead, cutting latency, and delivering measurable business impact through intelligent automation. Published in Springer and author of an open-source Python package on PyPI (ctxintel). Equally comfortable at the research frontier and in production backend engineering.
+AI/ML Engineer with 1.5+ years of production experience building and shipping LLM systems, RAG pipelines, AI agents, and computer vision applications across defence, enterprise, SaaS, and startup environments. Experienced in taking AI products from architecture to production across backend, cloud, and application layers. Proven track record of reducing operational overhead, cutting latency, and delivering measurable business impact through intelligent automation. Published in Springer and author of an open-source Python package on PyPI.
 
 ================================================================================
 EDUCATION
@@ -21,7 +21,7 @@ AI/ML & AI Systems:
   NLP, PyTorch, TensorFlow, Scikit-learn, OpenCV, LangChain, LangGraph, Retrieval-Augmented Generation (RAG), Prompt Engineering, LLM Fine-Tuning, Semantic Search, AI Agents, Pinecone, FAISS, ChromaDB, OpenSearch, Vector Search, Multi-Agent Systems, Data Pipelines, LiteLLM, Langfuse, Mediapipe
 
 Backend & MLOps/Cloud:
-  FastAPI, Flask, Django, REST APIs, AWS S3, AWS EC2, AWS Lambda, AWS Bedrock, GCP Cloud Run, Docker, Terraform, MLflow, Jenkins, Redis, Prometheus, Grafana, Sentry
+  FastAPI, Flask, Django, REST APIs, PostgreSQL, SQLAlchemy, AWS S3, AWS EC2, AWS Lambda, AWS Bedrock, GCP Cloud Run, GCP Compute Engine, Docker, Terraform, MLflow, Jenkins, Redis, Prometheus, Grafana, Sentry
 
 Soft Skills:
   Technical Writing & Documentation, Stakeholder Communication, Analytical Problem-Solving, Cross-Functional Team Collaboration, Research & Experimentation, Agile Workflows
@@ -30,22 +30,24 @@ Soft Skills:
 EXPERIENCE
 ================================================================================
 Software Engineer                                                   09/2026 – Present
-8x, Islamabad, Pakistan
-• Working on frontier projects across frontend, backend, AI, and DevOps.
+8x, Remote, United States
+• Build and ship AI-native products end-to-end, spanning LLM integrations, backend services, application architecture, and cloud infrastructure in a fast-paced startup environment.
+• Design and implement production AI workflows and intelligent automation systems, integrating LLMs, retrieval, structured generation, and external AI services into user-facing products.
+• Own features from architecture through deployment, working across Next.js, FastAPI, Supabase, GCP, and Python while contributing to product decisions, security, accessibility, and developer tooling.
 
 AI Engineer                                                         09/2025 – 08/2026
 Phebsoft, Islamabad, Pakistan (Client Partnership: Gitwork)
 • Architected multi-agent systems capable of autonomously performing tasks such as data scraping, information retrieval, and workflow automation.
 • Developed RAG pipelines with vector embeddings to enable contextual Q&A across large product documentation datasets.
 • Designed scalable AI APIs using FastAPI, delivering real-time inference.
-• Deployed Docker-based AI microservices on GCP VM Compute Engine, streamlining integration between ML models and production backend systems.
+• Deployed Docker-based AI microservices on GCP Compute Engine, streamlining integration between ML models and production backend systems.
 
-AI Engineer                                                         02/2025 – 09/2025
+AI Engineer                                                         02/2025 – 08/2025
 NASTP, Rawalpindi, Pakistan
 • Processed and curated 100k+ digital forensic records for AI model training, fine-tuning, and evaluation.
 • Fine-tuned transformer-based language models for document classification and semantic retrieval using AWS SageMaker, improving categorisation accuracy by 18%.
 • Delivered 5+ RESTful AI APIs covering OCR, speech, and voice processing using Python and FastAPI.
-• Optimised model serving pipelines achieving <400 ms inference latency across all production endpoints.
+• Optimised model serving pipelines achieving <400 ms inference latency across production endpoints.
 
 ================================================================================
 PROJECTS
