@@ -11,16 +11,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#fff; --ink:#0a0a0a; --soft:rgba(10,10,10,.3); --faint:rgba(10,10,10,.1);
+  --paper:#fff; --ink:#0a0a0a; --accent:#FF4F1F; /* swap this one value to change the accent */ --cloth:#D9400F; --cloth-w:1.3; --soft:rgba(10,10,10,.3); --faint:rgba(10,10,10,.1);
   --disp:'Anton',Impact,'Arial Narrow',sans-serif; --serif:'Instrument Serif',Georgia,serif; --mono:'JetBrains Mono',ui-monospace,monospace;
   --frame:clamp(8px,1.4vw,18px);
 }
-html.inv{ --paper:#0a0a0a; --ink:#fff; --soft:rgba(255,255,255,.3); --faint:rgba(255,255,255,.1); }
+html.inv{ --cloth:#FF4F1F; --cloth-w:1.05; --paper:#0a0a0a; --ink:#fff; --soft:rgba(255,255,255,.3); --faint:rgba(255,255,255,.1); }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--ink);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-::selection{background:var(--ink);color:var(--paper)}
+::selection{background:var(--accent);color:#0a0a0a}
 .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;line-height:1.5}
 .disp{font-family:var(--disp);font-weight:400;text-transform:uppercase;line-height:.85;letter-spacing:-.005em}
 
@@ -37,17 +37,17 @@ a{color:inherit;text-decoration:none}
 .console{padding:12px 18px;white-space:pre;overflow:hidden;font-size:10px}
 .nav{justify-content:space-around}
 .nav a{position:relative;padding:4px 0}
-.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .35s}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .35s}
 .nav a:hover::after{transform:scaleX(1);transform-origin:left}
 .icons{flex-direction:column;align-items:stretch}
 .icons a,.icons button{flex:1;display:flex;align-items:center;justify-content:center;border:0;background:none;color:inherit;cursor:pointer}
 .icons a+a{border-top:1px solid var(--ink)}
 .icons svg{width:18px;height:18px}
-.icons a:hover,.icons button:hover{background:var(--ink);color:var(--paper)}
+.icons a:hover,.icons button:hover{background:var(--accent);color:#0a0a0a}
 .tag{flex-direction:column;align-items:stretch}
 .tag div{flex:1;display:flex;align-items:center;padding:0 18px;font-size:clamp(16px,1.5vw,24px);letter-spacing:-.01em}
 .tag div+div{border-top:1px solid var(--ink)}
-.tag b{font-weight:400;font-style:italic;margin-left:6px;border-bottom:1px solid currentColor}
+.tag b{font-weight:400;font-style:italic;margin-left:6px;border-bottom:2px solid var(--accent)}
 .qr{justify-content:center;padding:10px}
 .qr #qr{width:72px;height:72px}
 .qr #qr img,.qr #qr canvas{width:100%!important;height:100%!important;image-rendering:pixelated}
@@ -68,7 +68,7 @@ a{color:inherit;text-decoration:none}
 .h1 .ch .b{position:absolute;inset:0;clip-path:inset(50% 0 0 0);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .h1 .ch:hover .a{transform:translateX(8%)}
 .h1 .ch:hover .b{transform:translateX(-8%)}
-.spark{width:.22em;height:.22em;flex:none;margin:0 .09em;animation:spin 10s linear infinite}
+.spark{width:.22em;height:.22em;flex:none;margin:0 .09em;animation:spin 10s linear infinite;color:var(--accent)}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* ---------- about ---------- */
@@ -85,7 +85,8 @@ a{color:inherit;text-decoration:none}
 .col{position:relative;max-width:440px;margin:0 auto;background:var(--paper);border-left:1px solid var(--ink);border-right:1px solid var(--ink)}
 .col .txt{padding:40px 40px 34px;font-size:clamp(19px,1.6vw,23px);line-height:1.3}
 .col .txt p+p{margin-top:18px}
-.col .txt a{border-bottom:1px solid currentColor}
+.col .txt a{border-bottom:2px solid var(--accent)}
+.col .txt a:hover{background:var(--accent);color:#0a0a0a}
 .col .txt .big{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(40px,4vw,58px);line-height:.88;margin-bottom:22px;letter-spacing:-.005em}
 .bar{background:var(--ink);color:var(--paper);text-align:center;padding:4px;font-family:var(--mono);font-size:9px;letter-spacing:.2em}
 .cells{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ink)}
@@ -93,11 +94,67 @@ a{color:inherit;text-decoration:none}
 .cell:nth-child(odd){border-right:1px solid var(--ink)}
 .cell.wide{grid-column:1/-1;border-right:0}
 .cell.hatch{background:repeating-linear-gradient(-45deg,var(--ink) 0 1px,transparent 1px 7px)}
-.cell .num{font-family:var(--disp);font-weight:400;font-size:58px;line-height:.85;text-transform:uppercase}
+.cell .num{color:var(--accent);font-family:var(--disp);font-weight:400;font-size:58px;line-height:.85;text-transform:uppercase}
 .cell .mono{opacity:.65}
 .cell.left{text-align:left;align-items:flex-start}
-.xp{border-bottom:1px solid var(--ink);padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline}
+.xp{border-bottom:1px solid var(--ink);padding:18px 20px 18px 34px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline;position:relative;overflow:hidden}
+.xp::before{content:"";position:absolute;left:16px;top:24px;width:8px;height:8px;border-radius:50%;background:var(--accent);transform:scale(0);transition:transform .5s cubic-bezier(.3,1.6,.5,1) .15s}
+.xp::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.xp>*{opacity:0;transform:translateX(-18px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.xp.in::before{transform:scale(1)}.xp.in::after{transform:scaleX(1)}
+.xp.in>*{opacity:1;transform:none}.xp.in>*:nth-child(2){transition-delay:.08s}.xp.in>*:nth-child(3){transition-delay:.16s}
+.xp:hover{background:var(--ink);color:var(--paper)}
+/* rotating "I build ___" line */
+.rot{display:flex;gap:.3em;align-items:baseline;margin:-6px 0 20px;font-style:italic}
+.rotw{position:relative;display:inline-block;height:1.3em;overflow:hidden;vertical-align:bottom;flex:1}
+.rotw span{position:absolute;left:0;top:0;white-space:nowrap;color:var(--accent);font-style:normal;transform:translateY(110%);transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.rotw span.on{transform:none}.rotw span.off{transform:translateY(-110%)}
+/* words light up as you read down the page */
+.lit .w{opacity:.16;transition:opacity .35s}
+.lit .w.on{opacity:1}
+/* ticker band inside the box */
+.tick{overflow:hidden;background:var(--accent);color:#0a0a0a;border-top:1px solid var(--ink);padding:9px 0}
+.tick div{display:flex;gap:28px;width:max-content;animation:scroll 18s linear infinite;font-family:var(--disp);font-size:24px;text-transform:uppercase;line-height:1}
+.tick span{display:flex;align-items:center;gap:28px;white-space:nowrap}
+.tick span::after{content:"✦";font-size:.7em}
+/* moving hatch + count-up */
+.cell.hatch{animation:hatch 2.4s linear infinite}
+@keyframes hatch{to{background-position:28px 0}}
+.cell{transition:background .3s,color .3s}
+.cell:not(.hatch):hover{background:var(--ink);color:var(--paper)}
+.cell:not(.hatch):hover .num{color:var(--accent)}
 .xp h4{font-weight:400;font-size:22px;line-height:1.1}
+.edu{display:grid;grid-template-columns:auto 1fr;border-bottom:0}
+.edu-deg{background:var(--ink);color:var(--paper);padding:18px 18px 14px;display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-width:120px}
+.edu-bs{display:flex;font-family:var(--disp);font-size:78px;line-height:.8;color:var(--accent);overflow:hidden}
+.edu-bs span{display:inline-block;transform:translateY(105%);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.edu-bs span+span{transition-delay:.1s}
+.edu.in .edu-bs span{transform:none}
+.edu-info{padding:18px 20px;display:flex;flex-direction:column;gap:4px;justify-content:center}
+.edu-info h4{font-family:var(--disp);font-weight:400;font-size:34px;line-height:.9;text-transform:uppercase}
+.edu-info p{font-size:20px;font-style:italic}
+.edu-info .mono{opacity:.65;margin-top:4px}
+.edu-years{grid-column:1/-1;border-top:1px solid var(--ink);padding:16px 20px 12px}
+.edu-track{height:6px;border:1px solid var(--ink);position:relative;overflow:hidden}
+.edu-track i{position:absolute;inset:0;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 1.6s cubic-bezier(.6,0,.2,1) .3s}
+.edu.in .edu-track i{transform:scaleX(1)}
+.edu-ticks{display:flex;justify-content:space-between;margin-top:8px;opacity:.65}
+.edu-tags{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;padding:0 20px 18px}
+.edu-tags span{border:1px solid var(--ink);border-radius:99px;padding:4px 10px;opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s,background .2s,color .2s}
+.edu.in .edu-tags span{opacity:1;transform:none}
+.edu.in .edu-tags span:nth-child(1){transition-delay:1.2s}.edu.in .edu-tags span:nth-child(2){transition-delay:1.35s}.edu.in .edu-tags span:nth-child(3){transition-delay:1.5s}
+.edu-tags span:hover{background:var(--accent);color:#0a0a0a;border-color:var(--accent)}
+.skills{border-top:1px solid var(--ink)}
+.sk{border-bottom:1px solid var(--ink);padding:16px 16px 14px}
+.sk:last-child{border-bottom:0}
+.sk h5{font-family:var(--disp);font-weight:400;font-size:26px;line-height:1;text-transform:uppercase;display:inline-block;position:relative;padding-bottom:6px;margin-bottom:10px}
+.sk h5::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.sk.in h5::after{transform:scaleX(1)}
+.sk .chips{display:flex;flex-wrap:wrap;gap:6px}
+.sk .chips span{border:1px solid var(--ink);border-radius:99px;padding:4px 10px;opacity:0;transform:translateY(10px) scale(.92);transition:opacity .45s,transform .45s cubic-bezier(.3,1.5,.5,1),background .2s,color .2s,border-color .2s}
+.sk.in .chips span{opacity:1;transform:none}
+.sk .chips span:hover{background:var(--accent);color:#0a0a0a;border-color:var(--accent)}
+.sk:hover h5{color:var(--accent)}
 .xp p{grid-column:1/-1;font-size:16px;line-height:1.35;opacity:.75}
 
 /* ---------- WORK pill morph ---------- */
@@ -124,14 +181,19 @@ a{color:inherit;text-decoration:none}
 .cards{position:absolute;inset:0;transform-style:preserve-3d;z-index:2}
 .lrows.front{z-index:3;pointer-events:none}
 .card{position:absolute;top:0;left:0;width:clamp(260px,26vw,420px);background:var(--paper);color:var(--ink);will-change:transform;box-shadow:0 24px 48px rgba(0,0,0,.3);transform-origin:50% 50%;backface-visibility:hidden}
-.card .chrome{display:flex;justify-content:space-between;padding:7px 10px;border-bottom:1px solid var(--ink);font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.card .chrome{background:var(--ink);color:var(--paper);display:flex;justify-content:space-between;padding:7px 10px;border-bottom:1px solid var(--ink);font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
 .card .body{padding:16px 16px 18px;display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:end}
 .card h3{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(34px,3.3vw,54px);line-height:.86;grid-column:1/-1}
 .card p{font-size:16px;line-height:1.25;grid-column:1/-1}
-.card .m{font-family:var(--disp);font-weight:400;font-size:clamp(40px,4vw,64px);line-height:.8}
+.card .m{color:var(--accent);font-family:var(--disp);font-weight:400;font-size:clamp(40px,4vw,64px);line-height:.8}
 .card .stack{font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase;opacity:.7;line-height:1.6}
-.card a.go{grid-column:1/-1;font-family:var(--mono);font-size:10px;text-transform:uppercase;border-top:1px solid var(--ink);padding-top:10px;display:flex;justify-content:space-between}
-.card a.go:hover{text-decoration:underline}
+.card .go{grid-column:1/-1;font-family:var(--mono);font-size:10px;text-transform:uppercase;border-top:1px solid var(--ink);padding-top:10px;display:flex;justify-content:space-between}
+.card.live{cursor:pointer}
+.card.live .chrome span:first-child{color:var(--accent)}
+.card.live:hover .chrome{background:var(--accent);color:#0a0a0a}
+.card.live:hover .chrome span:first-child{color:#0a0a0a}
+.card.live:hover .go{color:var(--accent)}
+.card.live:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .cap{position:absolute;left:0;bottom:-20px;font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--paper);text-transform:uppercase}
 .hud{position:absolute;left:18px;right:18px;bottom:14px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);mix-blend-mode:difference}
 
@@ -140,7 +202,7 @@ a{color:inherit;text-decoration:none}
 .since .pin{position:sticky;top:0;height:100vh;overflow:hidden}
 .burst{position:absolute;inset:0;width:100%;height:100%}
 .burst line{stroke:var(--ink);stroke-width:1;opacity:.35}
-.sun{position:absolute;left:50%;top:22%;width:64px;height:64px;margin:-32px 0 0 -32px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--paper)}
+.sun{position:absolute;left:50%;top:22%;width:64px;height:64px;margin:-32px 0 0 -32px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#0a0a0a}
 .sun svg{width:26px;height:26px;animation:spin 8s linear infinite}
 .persp{position:absolute;inset:0;perspective:700px;perspective-origin:50% 22%}
 .persp .t{position:absolute;left:50%;bottom:4vh;transform-origin:50% 100%;text-align:center;will-change:transform;white-space:nowrap}
@@ -150,7 +212,8 @@ a{color:inherit;text-decoration:none}
 .persp .l1{font-size:clamp(34px,5vw,80px);}
 .persp .l2{font-size:clamp(48px,8vw,130px);}
 .persp .l3{font-size:clamp(80px,15vw,250px);}
-.persp .l4{font-size:clamp(110px,20vw,340px);}
+.persp .l4{font-size:clamp(110px,20vw,340px);color:var(--accent)}
+.persp .ghost .l4{color:var(--ink)}
 
 .end{border-left:1px solid var(--ink);border-right:1px solid var(--ink);min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:36px;padding:100px 20px 40px;position:relative}
 .gowrap{width:min(78vw,500px);height:min(78vw,500px);display:grid;place-items:center;position:relative;z-index:2}
@@ -161,21 +224,24 @@ a{color:inherit;text-decoration:none}
 .gobtn .spk svg{width:100%;height:100%;animation:twinkle 1.6s ease-in-out infinite}
 @keyframes twinkle{0%,100%{transform:scale(.4) rotate(0)}50%{transform:scale(1) rotate(90deg)}}
 .gobtn .em{position:absolute;bottom:14%;font-family:var(--mono);font-size:10px;letter-spacing:.12em;opacity:0;transition:opacity .4s}
-.gobtn.big{width:100%;height:100%;outline-offset:10px}
+.gobtn.big{width:100%;height:100%;outline-offset:10px;background:var(--accent);color:#0a0a0a}
+.gobtn:hover:not(.big){background:var(--accent);color:#0a0a0a}
 .gobtn.big .word{font-size:clamp(90px,16vw,190px)}
 .gobtn.big .spk,.gobtn.big .em{opacity:1;transition-delay:.3s}
 .bulge{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .contact{max-width:760px;width:100%;text-align:center;position:relative;z-index:2}
-.mail{font-size:clamp(28px,5vw,64px);border-bottom:1px solid var(--ink);font-style:italic}
+.mail{font-size:clamp(28px,5vw,64px);border-bottom:3px solid var(--accent);font-style:italic}
+.mail:hover{color:var(--accent)}
 .links{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--ink);margin-top:28px;background:var(--paper)}
 .links a{padding:14px 8px;border-right:1px solid var(--ink)}
 .links a:last-child{border-right:0}
-.links a:hover{background:var(--ink);color:var(--paper)}
+.links a:hover{background:var(--accent);color:#0a0a0a}
 @media (max-width:700px){.links{grid-template-columns:1fr 1fr}.links a{border-bottom:1px solid var(--ink)}}
 .foot{width:100%;display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;padding-top:60px}
 .foot svg{width:40px;height:40px}
 .bottomframe{height:var(--frame);background:var(--ink)}
 
+@keyframes scroll{to{transform:translateX(-50%)}}
 /* reveal */
 .rv{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -190,7 +256,7 @@ a{color:inherit;text-decoration:none}
     <!-- U -->
     <rect x="64" y="0" width="16" height="120"/><rect x="64" y="104" width="56" height="16"/><rect x="104" y="0" width="16" height="120"/>
   </g></symbol>
-  <symbol id="smile" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" style="fill:var(--paper);stroke:var(--ink)" stroke-width="2.5"/><circle cx="14" cy="16" r="2.6" style="fill:var(--ink)"/><circle cx="26" cy="16" r="2.6" style="fill:var(--ink)"/><path d="M12 24 Q20 32 28 24" style="fill:none;stroke:var(--ink)" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  <symbol id="smile" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" style="fill:var(--accent);stroke:var(--ink)" stroke-width="2.5"/><circle cx="14" cy="16" r="2.6" style="fill:var(--ink)"/><circle cx="26" cy="16" r="2.6" style="fill:var(--ink)"/><path d="M12 24 Q20 32 28 24" style="fill:none;stroke:var(--ink)" stroke-width="2.5" stroke-linecap="round"/></symbol>
   <symbol id="star" viewBox="0 0 100 100"><path fill="currentColor" d="M50 0 C53 38 62 47 100 50 C62 53 53 62 50 100 C47 62 38 53 0 50 C38 47 47 38 50 0Z"/></symbol>
 </svg>
 
@@ -225,24 +291,46 @@ a{color:inherit;text-decoration:none}
       <div class="bar">ABOUT</div>
       <div class="txt">
         <div class="big">Hi, I'm Usman.</div>
-        <p>I'm a software engineer who ships full-stack products and the AI systems inside them: agents, RAG pipelines and vision models that answer in under 400&nbsp;ms.</p>
-        <p>I started in computer vision research, published in Springer, built defence-grade OCR and speech APIs at NASTP, multi-agent and RAG systems at Phebsoft, and now ship full-stack, AI and DevOps work at <a href="https://8x.social" target="_blank" rel="noopener">8x</a>. On the side I maintain <a href="https://pypi.org/project/ctxintel" target="_blank" rel="noopener">ctxintel</a> on PyPI, and keep learning.</p>
+        <p class="rot">I build <span class="rotw" id="rotw"><span class="on">full-stack products</span><span>multi-agent systems</span><span>RAG pipelines</span><span>vision models</span><span>production APIs</span></span></p>
+        <p class="lit">I'm a software engineer who ships full-stack products and the AI systems inside them: agents, RAG pipelines and vision models that answer in under 400&nbsp;ms.</p>
+        <p class="lit">I started in computer vision research, published in Springer, built defence-grade OCR and speech APIs at NASTP, multi-agent and RAG systems at Phebsoft, and now ship full-stack, AI and DevOps work at <a href="https://8x.social" target="_blank" rel="noopener">8x</a>. On the side I maintain <a href="https://pypi.org/project/ctxintel" target="_blank" rel="noopener">ctxintel</a> on PyPI, and keep learning.</p>
       </div>
+      <div class="tick" aria-hidden="true"><div><span>Full-stack</span><span>AI systems</span><span>DevOps</span><span>Next.js</span><span>FastAPI</span><span>Python</span><span>GCP</span><span>Full-stack</span><span>AI systems</span><span>DevOps</span><span>Next.js</span><span>FastAPI</span><span>Python</span><span>GCP</span></div></div>
       <div class="bar">SIGNALS</div>
       <div class="cells">
         <div class="cell wide">Published in The Visual Computer<br>Springer Nature</div>
-        <div class="cell"><span class="num">&lt;400<small style="font-size:.5em">ms</small></span><span class="mono">Inference · 5+ APIs</span></div>
+        <div class="cell"><span class="num">&lt;<b class="cu" data-to="400" style="font-weight:400">400</b><small style="font-size:.5em">ms</small></span><span class="mono">Inference · 5+ APIs</span></div>
         <div class="cell">ctxintel<br>on PyPI<span class="mono">30–50% fewer tokens</span></div>
         <div class="cell hatch" aria-hidden="true"></div>
-        <div class="cell"><span class="num">10×</span><span class="mono">ERP retrieval</span></div>
-        <div class="cell"><span class="num">−60%</span><span class="mono">Deploy time</span></div>
+        <div class="cell"><span class="num"><b class="cu" data-to="10" style="font-weight:400">10</b>×</span><span class="mono">ERP retrieval</span></div>
+        <div class="cell"><span class="num">−<b class="cu" data-to="60" style="font-weight:400">60</b>%</span><span class="mono">Deploy time</span></div>
         <div class="cell">100k+ records<br>curated<span class="mono">+18% accuracy</span></div>
       </div>
       <div class="bar">EXPERIENCE</div>
       <div class="xp"><h4>Software Engineer · 8x</h4><span class="mono">2026 — now</span><p>End-to-end products with Next.js, FastAPI, Supabase, GCP and Python. Remote, US.</p></div>
       <div class="xp"><h4>AI Engineer · Phebsoft</h4><span class="mono">2025 — 26</span><p>Multi-agent scraping and workflows, RAG over product docs, FastAPI + Docker on GCP. Client: Gitwork.</p></div>
-      <div class="xp"><h4>AI Engineer · NASTP</h4><span class="mono">2025</span><p>Forensic data curation, SageMaker fine-tuning, OCR, speech and voice APIs under 400 ms.</p></div>
-      <div class="xp" style="border-bottom:0"><h4>BS Computer Science · Air University</h4><span class="mono">2021 — 25</span><p>Deep learning, computer vision, distributed systems.</p></div>
+      <div class="xp" style="border-bottom:0"><h4>AI Engineer · NASTP</h4><span class="mono">2025</span><p>Forensic data curation, SageMaker fine-tuning, OCR, speech and voice APIs under 400 ms.</p></div>
+      <div class="bar">EDUCATION</div>
+      <div class="edu" id="edu">
+        <div class="edu-deg"><span class="edu-bs"><span>B</span><span>S</span></span><span class="mono">Bachelor of<br>Science</span></div>
+        <div class="edu-info">
+          <h4>Computer Science</h4>
+          <p>Air University</p>
+          <span class="mono">GPA 3.10 / 4.00</span>
+        </div>
+        <div class="edu-years" aria-label="2021 to 2025">
+          <div class="edu-track"><i></i></div>
+          <div class="edu-ticks mono"><span>2021</span><span>22</span><span>23</span><span>24</span><span>2025</span></div>
+        </div>
+        <div class="edu-tags mono"><span>Deep learning</span><span>Computer vision</span><span>Distributed systems</span></div>
+      </div>
+      <div class="bar">SKILLS</div>
+      <div class="skills" id="skills">
+        <div class="sk"><h5>Engineering</h5><div class="chips mono"><span>Software engineering</span><span>System design</span><span>API design</span><span>Distributed systems</span><span>Microservices</span><span>Testing &amp; CI/CD</span><span>Code review</span></div></div>
+        <div class="sk"><h5>AI</h5><div class="chips mono"><span>LLM apps &amp; agents</span><span>RAG</span><span>Prompt &amp; context engineering</span><span>Computer vision</span><span>Fine-tuning</span><span>MLOps</span></div></div>
+        <div class="sk"><h5>Stack</h5><div class="chips mono"><span>Python</span><span>TypeScript</span><span>Next.js</span><span>FastAPI</span><span>PostgreSQL</span><span>Supabase</span><span>Docker</span><span>GCP</span><span>AWS</span></div></div>
+        <div class="sk"><h5>Practice</h5><div class="chips mono"><span>Product thinking</span><span>Observability</span><span>Security basics</span><span>Technical writing</span></div></div>
+      </div>
     </div>
   </section>
 
@@ -362,8 +450,12 @@ a{color:inherit;text-decoration:none}
         }
       }
     };
+    // cloth colour/weight per mode: deeper orange and heavier lines on white, bright orange on black
+    let accent, clothW; const readCloth = () => { const cs = getComputedStyle(root); accent = cs.getPropertyValue('--cloth').trim() || '#D9400F'; clothW = parseFloat(cs.getPropertyValue('--cloth-w')) || 1.2; }; readCloth();
     const draw = () => {
-      ctx.clearRect(0, 0, W, H); ctx.strokeStyle = stroke; ctx.lineWidth = .8; ctx.beginPath();
+      ctx.clearRect(0, 0, W, H); ctx.lineWidth = clothW;
+      // the whole fabric is drawn in the accent colour
+      ctx.strokeStyle = accent; ctx.beginPath();
       for (let c = 0; c < cols; c++) { const x0 = c * GAP, b = c * rows; ctx.moveTo(x0 + dx[b], 0); for (let r = 1; r < rows; r++) ctx.lineTo(x0 + dx[b + r], r * SEG); }
       ctx.stroke();
     };
@@ -371,7 +463,7 @@ a{color:inherit;text-decoration:none}
     const start = () => { if (running || reduce) return; running = true; requestAnimationFrame(loop); };
     resize(); draw();
     addEventListener('resize', () => { resize(); draw(); });
-    document.getElementById('toggle').addEventListener('click', () => requestAnimationFrame(() => { stroke = ink(); draw(); }));
+    document.getElementById('toggle').addEventListener('click', () => requestAnimationFrame(() => { stroke = ink(); readCloth(); draw(); }));
     new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) start(); }).observe(field);
   })();
 
@@ -395,16 +487,16 @@ a{color:inherit;text-decoration:none}
   const rowsEl = [...lrows.children], rowsF = [...lrowsF.children];
   const cardsEl = document.getElementById('cards');
   cardsEl.innerHTML = projects.map((p, i) => `
-    <article class="card">
-      <div class="chrome"><span>${p.host}</span><span>${pad(i + 1)}/${pad(N)}</span></div>
+    <${p.url ? `a href="${p.url}" target="_blank" rel="noopener" aria-label="${p.name}, open ${p.host}"` : 'article'} class="card${p.url ? ' live' : ''}">
+      <div class="chrome"><span>${p.url ? '● ' : ''}${p.host}</span><span>${pad(i + 1)}/${pad(N)}</span></div>
       <div class="body">
         <h3>${p.name}</h3><p>${p.d}</p>
         <div><div class="m">${p.m}</div><div class="stack" style="margin-top:6px">${p.ml}</div></div>
         <div class="stack" style="text-align:right">${p.s.split(' · ').join('<br>')}</div>
-        ${p.url ? `<a class="go" href="${p.url}" target="_blank" rel="noopener"><span>Visit ${p.host}</span><span>↗</span></a>` : `<span class="go stack" style="grid-column:1/-1;border-top:1px solid;padding-top:10px">Internal system</span>`}
+        ${p.url ? `<span class="go"><span>Visit ${p.host}</span><span>↗</span></span>` : `<span class="go stack">Internal system · not public</span>`}
       </div>
       <span class="cap">#${p.id}-${pad(i + 1)}${pad(N)} · ${p.kind}</span>
-    </article>`).join('');
+    </${p.url ? 'a' : 'article'}>`).join('');
   const cards = [...cardsEl.children];
   const lanes = [0.08, 0.52, 0.28, 0.6, 0.12, 0.46, 0.22, 0.56];
   const ws = document.getElementById('workscroll'), hudN = document.getElementById('hudnum'), hudT = document.getElementById('hudname');
@@ -567,6 +659,40 @@ a{color:inherit;text-decoration:none}
 
   /* ---------- GO / contact ---------- */
 
+
+  /* ---------- About: rotating role, word highlight, count-ups, timeline ---------- */
+  (() => {
+    // rotating "I build ___"
+    const rw = [...document.querySelectorAll('#rotw span')]; let ri = 0;
+    if (!reduce) setInterval(() => { const cur = rw[ri], nxt = rw[(ri + 1) % rw.length]; cur.classList.remove('on'); cur.classList.add('off'); nxt.classList.remove('off'); nxt.classList.add('on'); setTimeout(() => cur.classList.remove('off'), 650); ri = (ri + 1) % rw.length; }, 2000);
+
+    // split paragraphs into words (keeping links intact) so they light up as you read
+    const lits = [...document.querySelectorAll('.lit')];
+    const wrapWords = node => { [...node.childNodes].forEach(ch => {
+      if (ch.nodeType === 3) { const frag = document.createDocumentFragment(); ch.textContent.split(/(\s+)/).forEach(t => { if (!t) return; if (/^\s+$/.test(t)) frag.appendChild(document.createTextNode(t)); else { const s = document.createElement('span'); s.className = 'w'; s.textContent = t; frag.appendChild(s); } }); ch.replaceWith(frag); }
+      else if (ch.nodeType === 1) { if (ch.tagName === 'A') ch.classList.add('w'); else wrapWords(ch); } }); };
+    lits.forEach(wrapWords);
+    const words = lits.map(p => [...p.querySelectorAll('.w')]);
+    const light = () => {
+      const vh = innerHeight;
+      lits.forEach((p, k) => { const r = p.getBoundingClientRect(); if (r.bottom < -50 || r.top > vh + 50) return;
+        const prog = clamp((vh * 0.82 - r.top) / (r.height + vh * 0.3), 0, 1), n = Math.round(prog * words[k].length);
+        words[k].forEach((w, i) => w.classList.toggle('on', i < n)); });
+    };
+    if (reduce) words.flat().forEach(w => w.classList.add('on')); else { addEventListener('scroll', light, { passive: true }); light(); }
+
+    // count-ups when the signal cells come into view
+    const cus = document.querySelectorAll('.cu');
+    const run = el => { const to = +el.dataset.to, t0 = performance.now(), d = 1400; const f = t => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 4); el.textContent = Math.round(to * e); if (k < 1) requestAnimationFrame(f); }; requestAnimationFrame(f); };
+    const cio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { run(en.target); cio.unobserve(en.target); } }), { threshold: .6 });
+    if (!reduce) cus.forEach(el => { el.textContent = '0'; cio.observe(el); });
+
+    // experience rows draw in one by one
+    const xio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); xio.unobserve(en.target); } }), { threshold: .4 });
+    document.querySelectorAll('.xp').forEach((x, i) => { x.style.transitionDelay = (i * 0.06) + 's'; reduce ? x.classList.add('in') : xio.observe(x); });
+    const edu = document.getElementById('edu'); reduce ? edu.classList.add('in') : xio.observe(edu);
+    document.querySelectorAll('.sk').forEach(sk => { [...sk.querySelectorAll('.chips span')].forEach((c, i) => c.style.transitionDelay = (0.15 + i * 0.05) + 's'); reduce ? sk.classList.add('in') : xio.observe(sk); });
+  })();
 
   /* ---------- clock, QR, invert, reveal ---------- */
   const clock = document.getElementById('clock');
